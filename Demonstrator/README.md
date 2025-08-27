@@ -1,4 +1,4 @@
-# Demonstrator Repo
+# Demonstrator Repo 🔍 
 
 ADD INTRO....
 
@@ -10,11 +10,11 @@ ADD INTRO....
 
 ⚠️ **Note:** This design is hardware-dependent and requires custom PCBs. The build instructions can still be followed, but the system will not be functional!
 
-## Build Steps to Run the Demonstrator
+ ## Build Steps to Run the Demonstrator 🔨
 
 There are two stages for building the demonstrator and must be performed in order.
 
-## 1. Python GUI Build
+ ## 1. Python GUI Build 📺
 
 **Step 1** - Download the repo zip file (if not already done so).
 
@@ -35,7 +35,7 @@ There are two stages for building the demonstrator and must be performed in orde
 
             python ISCAS_demo_gui.py
 
-## 2. FPGA Build (Vitis IDE)
+ ## 2. FPGA Build (Vitis IDE) 🖥️
 
 **Step 1** - Open Vitis IDE with a clean workpace and start a new application project.
 
