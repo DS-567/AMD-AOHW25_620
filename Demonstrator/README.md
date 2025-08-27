@@ -25,11 +25,11 @@ There are two stages for building the demonstrator, which must be performed in o
 
 **Step 2** - Open the terminal (Windows `cmd`) and navigate to folder:
 
-`(\Demonstrator\sw\Python_GUI)`
+`/Demonstrator/sw/Python_GUI`
 
 **Step 3** - Create and activate a virtual environment (windows):
          
-`<python39.exe path> -m venv venv`
+`[PATH_TO_PYTHON39] -m venv venv`
 
 `venv\Scripts\activate`
 
