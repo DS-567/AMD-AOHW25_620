@@ -1,6 +1,6 @@
 # Steps to Run the Demonstrator
 
-Note that this project is fully re-producible by following the build instructions, however the PCBs are required for operation and the design can't function without them.
+⚠️ Note: This design is hardware-dependent and requires custom PCBs. The build instructions can still be followed, but the system will not be functional!
 
 **Step 1** - Download the repo zip file (if not already done so).
 
