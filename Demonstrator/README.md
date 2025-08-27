@@ -23,14 +23,17 @@ There are two stages for building the demonstrator, which must be performed in o
 
 **Step 1** - Download the repo zip file (if not already done so).
 
-**Step 2** - Open terminal (cmd) and navigate to folder:
+**Step 2** - Open the terminal (Windows `cmd`) and navigate to folder:
 
 `(\Demonstrator\sw\Python_GUI)`
 
 **Step 3** - Create and activate a virtual environment (windows):
          
-           <python39.exe path> -m venv venv
-           venv\Scripts\activate
+`
+<python39.exe path> -m venv venv
+
+venv\Scripts\activate
+`
     
 **Step 4** - Install dependencies:
 
