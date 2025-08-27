@@ -1,4 +1,4 @@
-# Demonstrator 🔍 
+# Demonstrator Overview 🔍 
 
 This repository contains the source code for the Smart Watchdog demonstrator presented at ISCAS 2025 and submitted to the [AMD Open Hardware Design Competition 2025]. It includes a Python GUI frontend and an FPGA backend built in Vitis, running on the Nexys A7-100T board. The FPGA bitstream was generated using Vivado.
 (NEEDS EDITED)
@@ -35,9 +35,9 @@ This repository contains the source code for the Smart Watchdog demonstrator pre
 **Note:** The motor control C and disassembled source code can be found: `neorv32-main/sw/example/my_code_iscas_demo`
 
 - Custom PCBs
-     - ***Motor control PCB*** : 
-     - ***Motor encoder PCB*** :
-     - ***Motor fault injection and smart watchdog monitoring PCB*** :
+     - ***Motor control PCB*** : Digital inputs to start, stop and change the direction and speed of the motor
+     - ***Motor encoder PCB*** : Encoder speed feedback pulses of the motor for Neorv32 (12v to 3.3V)
+     - ***Motor fault injection and smart watchdog monitoring PCB*** : Used to setup and inject faults into Neorv32 and observe the smart watchdog response
 
 **Note:** More information on the custom PCBs can be found: `PCBs/`
 
