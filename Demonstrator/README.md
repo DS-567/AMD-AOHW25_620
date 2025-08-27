@@ -15,10 +15,10 @@ This repository contains the source code for the Smart Watchdog demonstrator pre
      - ***images/*** : Images for GUI
 
 - MicroBlaze
-     - main.c : Main C code that runs on the MicroBlaze
-     - platform.c  : Platform-specific functions
-     - platform.h  : Platform-specific header file
-     - platform_config.h : Platform config header file
+     - ***main.c*** : Main C code that runs on the MicroBlaze
+     - ***platform.c***  : Platform-specific functions
+     - ***platform.h***  : Platform-specific header file
+     - ***platform_config.h*** : Platform config header file
 
 ### /hw
 - Vivado
@@ -33,6 +33,13 @@ This repository contains the source code for the Smart Watchdog demonstrator pre
      - ***sw/*** : Contains software framework for the RISC-V CPU - Neorv32 (not required for build)
 
 **Note:** The motor control C and disassembled source code can be found: `neorv32-main/sw/example/my_code_iscas_demo`
+
+- Custom PCBs
+     - ***Motor control PCB*** : 
+     - ***Motor encoder PCB*** :
+     - ***Motor fault injection and smart watchdog monitoring PCB*** :
+
+**Note:** More information on the custom PCBs can be found: `PCBs/`
 
 ---
 
