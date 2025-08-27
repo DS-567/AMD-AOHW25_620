@@ -4,11 +4,9 @@ ADD INTRO....
 
 ## Demonstrator Dependencies
 
-Python version: 3.9
-
-VITIS version: 2023.1
-
-FPGA platform: Nexys A7-100T
+- Python: **3.9**
+- Vitis: **2023.1**
+- FPGA platform: **Nexys A7-100T**
 
 ⚠️ **Note:** This design is hardware-dependent and requires custom PCBs. The build instructions can still be followed, but the system will not be functional!
 
@@ -49,10 +47,9 @@ There are two stages for building the demonstrator and must be performed in orde
 
 **Step 5** - Select Empty Application (C) and press Next>.
 
-**Step 6** - Right click ......... and add src files, make sure all 4 are selected.
+**Step 6** - Right-click the src folder → Add Sources → select all 4 provided .c files.
 
 **Step 7** - Set up a single debug application and run the configuration.
 
-The Python GUI should get initialised once the FPGA is programmed and the demonstrator has been successfully built.
-
+✅ Once the FPGA is programmed, the Python GUI will initialize, completing the demonstrator build.
 
