@@ -6,6 +6,8 @@ ADD INTRO....
 
 ⚠️ **Note:** This design is specifically designed for the Nexys A7-100T development board (Artix-7 FPGA) only!
 
+There are two stages for building the demonstrator and must be performed in order.
+
 ## 1. Python GUI Build
 
 **Step 1** - Download the repo zip file (if not already done so).
