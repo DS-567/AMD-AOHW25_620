@@ -1,9 +1,27 @@
 # Demonstrator 🔍 
 
-This directory contains the demonstration of the smart watchdog that was presented at ISCAS 2025 and is submitted for the [AMD Open Hardware Design Competition 2025].  
-It includes a Python GUI frontend and an FPGA backend built in Vitis, running on the **Nexys A7-100T** board. The bitstream was generated and exported from Vivado.
+This repository contains the source code for the Smart Watchdog demonstrator presented at ISCAS 2025 and submitted to the [AMD Open Hardware Design Competition 2025]. It includes a Python GUI frontend and an FPGA backend built in Vitis, running on the Nexys A7-100T board. The FPGA bitstream was generated using Vivado.
 (NEEDS EDITED)
 
+---
+
+## Demonstrator Contents 📦
+
+### /sw
+- Python GUI
+     - ***ISCAS_demo_gui.py*** : Main Python GUI script
+     - ***Requirements.txt***  : Python dependencies
+     - ***uart_config.json***  : UART configuration
+     - ***Images/*** :GUI Images
+
+- Python GUI
+     - ISCAS_demo_gui.py
+     - Requirements.txt : Python dependencies
+     - uart_config.json (uart configuration)
+     - Images/ (GUI Images)
+
+
+       
 ---
 
 ## Demonstrator Dependencies 📝
@@ -70,7 +88,7 @@ A blank GUI should pop-up.
 
 **Step 5** - Select **Empty Application (C)** and **Click Next>**.
 
-**Step 6** - **Right-click the src folder** → **Add Sources** → select the 4 source files from:
+**Step 6** - **Right-click the src folder** → **Add Sources** → select the **4 source files** from:
 
 `/Demonstrator/sw/MicroBlaze`
 
