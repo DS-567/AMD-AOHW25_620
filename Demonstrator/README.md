@@ -38,7 +38,9 @@ There are two stages for building the demonstrator, which must be performed in o
 
            pip install -r requirements.txt
 
-**Step 5** - Plug in the Nexys A7-100T FPGA board. Find the COM port in Device Manager and update `uart_config.json,` e.g. `"COM1"`.
+**Step 5** - Plug in the Nexys A7-100T FPGA board. Find the COM port in Device Manager and update `uart_config.json,` e.g.
+
+`"COM1"`.
 
 **Step 6** - Run the script:
 
