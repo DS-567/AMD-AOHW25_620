@@ -2,6 +2,7 @@
 
 This directory contains the demonstration of the smart watchdog that was presented at ISCAS 2025 and is submitted for the [AMD Open Hardware Design Competition 2025].  
 It includes a Python GUI frontend and an FPGA backend built in Vitis, running on the **Nexys A7-100T** board. The bitstream was generated and exported from Vivado.
+(NEEDS EDITED)
 
 ---
 
