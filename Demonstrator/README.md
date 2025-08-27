@@ -1,10 +1,14 @@
-# Steps to Run the Demonstrator
-
 ADD INTRO....
+
+# Demonstrator Dependencies
+
+
 
 ⚠️ **Note:** This design is hardware-dependent and requires custom PCBs. The build instructions can still be followed, but the system will not be functional!
 
 ⚠️ **Note:** This design is specifically designed for the Nexys A7-100T development board (Artix-7 FPGA) only!
+
+# Steps to Run the Demonstrator
 
 There are two stages for building the demonstrator and must be performed in order.
 
@@ -23,7 +27,7 @@ There are two stages for building the demonstrator and must be performed in orde
 
            pip install -r requirements.txt
 
-**Step 5** - Plug in Nexys A7-100T FPGA board. Open device manager, find the COM port and manually overwrite the uart_config.json file
+**Step 5** - Plug in the Nexys A7-100T FPGA board. Find the COM port in Device Manager and update `uart_config.json,` e.g. `"COM1"`.
 
 **Step 6** - Run the script:
 
