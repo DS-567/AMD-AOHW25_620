@@ -4,7 +4,7 @@ ADD INTRO....
 
 ## Demonstrator Dependencies
 
-- Python: **3.9**
+- Python: **3.9.10**
 - Vitis: **2023.1**
 - FPGA platform: **Nexys A7-100T**
 
