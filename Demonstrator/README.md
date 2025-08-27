@@ -4,6 +4,8 @@ ADD INTRO....
 
 ⚠️ Note: This design is hardware-dependent and requires custom PCBs. The build instructions can still be followed, but the system will not be functional!
 
+⚠️ Note: This design is specifically designed for the Nexys A7-100T development board (Artix-7 FPGA) only!
+
 **Step 1** - Download the repo zip file (if not already done so).
 
 **Step 2** - Open terminal (cmd) and navigate to folder (\Demonstrator).
