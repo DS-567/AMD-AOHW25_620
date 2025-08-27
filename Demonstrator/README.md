@@ -56,9 +56,11 @@ and navigate to folder:
 
 **Step 1** - Open Vitis IDE with a clean workpace and start a new application project.
 
-**Step 2** - Select the tab **"create a new platform from hardware (XSA)"**. Browse and select the design_1_wrapper.xsa, and press Next>.
+**Step 2** - Select the tab **"create a new platform from hardware (XSA)"**. Browse for the **"design_1_wrapper.xsa"**, found in:
 
-**Step 3** - Enter the application project name as demo, and press Next>.
+`/Demonstrator/hw/design_1_wrapper.xsa` and **click Next>**.
+
+**Step 3** - **Name the application project** demo (or anything), and **click Next>**.
 
 **Step 4** - **Click Next>** again on the domain page.
 
