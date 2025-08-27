@@ -107,9 +107,12 @@ A blank GUI should pop-up.
 
 **Step 5** - Select **Empty Application (C)** and **Click Next>**.
 
-**Step 6** - **Right-click the src folder** → **Add Sources** → select the **4 source files** from:
+**Step 6** - **Right-click the src folder** → **Add Sources** → select the **4 source files** from: `/Demonstrator/sw/MicroBlaze`
 
-`/Demonstrator/sw/MicroBlaze`
+`main.c`
+`platform.c`
+`platform.h`
+`platform_config.h`
 
 **Step 7** - Set up a **single debug application** and run the configuration.
 
