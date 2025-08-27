@@ -11,7 +11,7 @@ ADD INTRO....
 - FPGA platform: **Nexys A7-100T**
 
 ⚠️ **Note:** This design is hardware-dependent and requires custom PCBs.  
-The build instructions can still be followed, but the system will not function without them. 
+The build instructions can still be followed, but the system will not function without them!
 
 ---
 
@@ -29,12 +29,11 @@ There are two stages for building the demonstrator, which must be performed in o
 
 **Step 3** - Create and activate a virtual environment (windows):
          
-`
-<python39.exe path> -m venv venv
+`<python39.exe path> -m venv venv`
 
-venv\Scripts\activate
-`
-    
+`venv\Scripts\activate`
+
+
 **Step 4** - Install dependencies:
 
            pip install -r requirements.txt
@@ -57,7 +56,7 @@ venv\Scripts\activate
 
 **Step 4** - **Click Next>** again on the domain page.
 
-**Step 5** - Select Empty Application (C) and press Next>.
+**Step 5** - Select **Empty Application (C)** and **Click Next>**.
 
 **Step 6** - Right-click the src folder → Add Sources → select all 4 provided source files from ....... (nicer code directory..)
 
