@@ -10,15 +10,15 @@ This repository contains the source code for the Smart Watchdog demonstrator pre
 ### /sw
 - Python GUI
      - ***ISCAS_demo_gui.py*** : Main Python GUI script
-     - ***Requirements.txt***  : Python dependencies
+     - ***requirements.txt***  : Python dependencies
      - ***uart_config.json***  : UART configuration
-     - ***Images/*** :GUI Images
+     - ***images/*** :GUI Images
 
-- Python GUI
-     - ISCAS_demo_gui.py
-     - Requirements.txt : Python dependencies
-     - uart_config.json (uart configuration)
-     - Images/ (GUI Images)
+- MicroBlaze
+     - main.c : 
+     - main.c : 
+     - main.c : 
+     - main.c : 
 
 
        
