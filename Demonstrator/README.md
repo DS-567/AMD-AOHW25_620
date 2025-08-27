@@ -1,5 +1,7 @@
 # Steps to Run the Demonstrator
 
+ADD INTRO....
+
 ⚠️ Note: This design is hardware-dependent and requires custom PCBs. The build instructions can still be followed, but the system will not be functional!
 
 **Step 1** - Download the repo zip file (if not already done so).
