@@ -51,6 +51,7 @@ and navigate to folder:
 
 `python ISCAS_demo_gui.py`
 
+A blank GUI should pop-up.
 ---
 
  ## 2. FPGA Build (Vitis IDE) 🖥️
