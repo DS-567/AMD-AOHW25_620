@@ -60,7 +60,9 @@ There are two stages for building the demonstrator, which must be performed in o
 
 **Step 5** - Select **Empty Application (C)** and **Click Next>**.
 
-**Step 6** - Right-click the src folder → Add Sources → select all 4 provided source files from ....... (nicer code directory..)
+**Step 6** - **Right-click the src folder** → **Add Sources** → select the 4 source files from:
+
+`/Demonstrator/sw/MicroBlaze`
 
 **Step 7** - Set up a **single debug application** and run the configuration.
 
