@@ -35,4 +35,6 @@ Note that this project is fully re-producible by following the build instruction
 
 **Step 13** - Set up a single debug application and run the configuration.
 
+The Python GUI should get initialised once the FPGA is programmed and the demonstrator has been successfully built.
+
 
