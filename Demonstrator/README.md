@@ -6,6 +6,8 @@ ADD INTRO....
 
 ⚠️ **Note:** This design is specifically designed for the Nexys A7-100T development board (Artix-7 FPGA) only!
 
+## 1. Python GUI Build
+
 **Step 1** - Download the repo zip file (if not already done so).
 
 **Step 2** - Open terminal (cmd) and navigate to folder (\Demonstrator).
@@ -25,19 +27,21 @@ ADD INTRO....
 
             python ISCAS_demo_gui.py
 
-**Step 7** - Open Vitis IDE with a clean workpace and start a new application project.
+## 2. FPGA Build (Vitis IDE)
 
-**Step 8** - Select the tab "create a new platform from hardware (XSA). Browse and select the design_1_wrapper.xsa, and press Next>.
+**Step 1** - Open Vitis IDE with a clean workpace and start a new application project.
 
-**Step 9** - Enter the application project name as demo, and press Next>.
+**Step 2** - Select the tab "create a new platform from hardware (XSA). Browse and select the design_1_wrapper.xsa, and press Next>.
 
-**Step 10** - Press Next> again on the domain page.
+**Step 3** - Enter the application project name as demo, and press Next>.
 
-**Step 11** - Select Empty Application (C) and press Next>.
+**Step 4** - Press Next> again on the domain page.
 
-**Step 12** - Right click ......... and add src files, make sure all 4 are selected.
+**Step 5** - Select Empty Application (C) and press Next>.
 
-**Step 13** - Set up a single debug application and run the configuration.
+**Step 6** - Right click ......... and add src files, make sure all 4 are selected.
+
+**Step 7** - Set up a single debug application and run the configuration.
 
 The Python GUI should get initialised once the FPGA is programmed and the demonstrator has been successfully built.
 
