@@ -2,13 +2,18 @@
 
 ADD INTRO....
 
-## Demonstrator Dependencies
+---
+
+## Demonstrator Dependencies 📝
 
 - Python: **3.9.10**
 - Vitis: **2023.1**
 - FPGA platform: **Nexys A7-100T**
 
-⚠️ **Note:** This design is hardware-dependent and requires custom PCBs. The build instructions can still be followed, but the system will not be functional!
+⚠️ **Note:** This design is hardware-dependent and requires custom PCBs.  
+The build instructions can still be followed, but the system will not function without them. 
+
+---
 
  ## Build Steps to Run the Demonstrator 🔨
 
@@ -35,21 +40,25 @@ There are two stages for building the demonstrator and must be performed in orde
 
             python ISCAS_demo_gui.py
 
+---
+
  ## 2. FPGA Build (Vitis IDE) 🖥️
 
 **Step 1** - Open Vitis IDE with a clean workpace and start a new application project.
 
-**Step 2** - Select the tab "create a new platform from hardware (XSA). Browse and select the design_1_wrapper.xsa, and press Next>.
+**Step 2** - Select the tab **"create a new platform from hardware (XSA)"**. Browse and select the design_1_wrapper.xsa, and press Next>.
 
 **Step 3** - Enter the application project name as demo, and press Next>.
 
-**Step 4** - Press Next> again on the domain page.
+**Step 4** - **Click Next>** again on the domain page.
 
 **Step 5** - Select Empty Application (C) and press Next>.
 
-**Step 6** - Right-click the src folder → Add Sources → select all 4 provided .c files.
+**Step 6** - Right-click the src folder → Add Sources → select all 4 provided source files from ....... (nicer code directory..)
 
-**Step 7** - Set up a single debug application and run the configuration.
+**Step 7** - Set up a **single debug application** and run the configuration.
+
+---
 
 ✅ Once the FPGA is programmed, the Python GUI will initialize, completing the demonstrator build.
 
