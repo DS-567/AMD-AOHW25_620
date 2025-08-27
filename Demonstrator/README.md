@@ -12,20 +12,27 @@ This repository contains the source code for the Smart Watchdog demonstrator pre
      - ***ISCAS_demo_gui.py*** : Main Python GUI script
      - ***requirements.txt***  : Python dependencies
      - ***uart_config.json***  : UART configuration
-     - ***images/*** : GUI Images
+     - ***images/*** : Images for GUI
 
 - MicroBlaze
      - main.c : Main C code that runs on the MicroBlaze
      - platform.c  : Platform-specific functions
      - platform.h  : Platform-specific header file
-     - platform_config.h : Platform config header file.
+     - platform_config.h : Platform config header file
 
 ### /hw
-- Python GUI
-     - ***ISCAS_demo_gui.py*** : Main Python GUI script
-     - 
- 
-  
+- Vivado
+     - ***design_1_wrapper.xsa*** : Generated bitstream from Vivado for use in Vitis
+     - ***constraints_file.xdc*** : Nexys A7-100T board contraints (not required for build)
+     - ***HDL/*** : Contains all HDL source of the demonstrator FPGA design (not required for build)
+     - ***setup_text_files/*** : Text files of SNN parameters used during Vivado synthesis (not required for build)
+
+- RISC-V
+     - ***design_1_wrapper.xsa*** : Generated bitstream from Vivado for use in Vitis
+     - ***constraints_file.xdc*** : Nexys A7-100T board contraints (not required for build)
+     - ***HDL/*** : Contains all HDL source of the demonstrator FPGA design (not required for build)
+     - ***setup_text_files/*** : Text files of SNN parameters used during Vivado synthesis (not required for build)
+
 ---
 
 ## Demonstrator Dependencies 📝
