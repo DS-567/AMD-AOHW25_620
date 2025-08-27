@@ -1,14 +1,18 @@
+# Demonstrator Repo
+
 ADD INTRO....
 
-# Demonstrator Dependencies
+## Demonstrator Dependencies
 
+Python version: 3.9
 
+VITIS version: 2023.1
 
 ⚠️ **Note:** This design is hardware-dependent and requires custom PCBs. The build instructions can still be followed, but the system will not be functional!
 
 ⚠️ **Note:** This design is specifically designed for the Nexys A7-100T development board (Artix-7 FPGA) only!
 
-# Steps to Run the Demonstrator
+## Build Steps to Run the Demonstrator
 
 There are two stages for building the demonstrator and must be performed in order.
 
