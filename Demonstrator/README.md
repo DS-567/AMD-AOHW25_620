@@ -17,13 +17,15 @@ The build instructions can still be followed, but the system will not function w
 
  ## Build Steps to Run the Demonstrator 🔨
 
-There are two stages for building the demonstrator and must be performed in order.
+There are two stages for building the demonstrator, which must be performed in order.
 
  ## 1. Python GUI Build 📺
 
 **Step 1** - Download the repo zip file (if not already done so).
 
-**Step 2** - Open terminal (cmd) and navigate to folder (\Demonstrator).
+**Step 2** - Open terminal (cmd) and navigate to folder:
+
+`(\Demonstrator\sw\Python_GUI)`
 
 **Step 3** - Create and activate a virtual environment (windows):
          
