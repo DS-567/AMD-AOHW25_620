@@ -30,7 +30,7 @@ This repository contains the source code for the Smart Watchdog demonstrator pre
 - neorv32-main
      - ***rtl/*** : Contains all VHDL source code for the RISC-V CPU - Neorv32 (not required for build)
      - ***sim/*** : Contains all simulation resources for the RISC-V CPU - Neorv32 (not required for build)
-     - ***sw/*** : Contains software framework for the RISC-V CPU - Neorv32 (not required for build).....
+     - ***sw/*** : Contains software framework for the RISC-V CPU - Neorv32 (not required for build)
   
           The motor control C and disassembled source code can be found: `neorv32-main/sw/example/my_code_iscas_demo`
 
