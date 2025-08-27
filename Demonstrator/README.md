@@ -10,8 +10,8 @@ ADD INTRO....
 
 **Step 3** - Create and activate a virtual environment (windows):
          
-           <python39.exe path> -m venv venv
-           venv\Scripts\activate
+           ```<python39.exe path> -m venv venv
+           venv\Scripts\activate```
     
 **Step 4** - Install dependencies:
 
