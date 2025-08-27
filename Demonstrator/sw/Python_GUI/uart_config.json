@@ -1,0 +1,5 @@
+{
+  "uart_port": "COM7",
+  "baud_rate": 230400,
+  "timeout"  : 1
+}
