@@ -24,14 +24,15 @@ This repository contains the source code for the Smart Watchdog demonstrator pre
 - Vivado
      - ***design_1_wrapper.xsa*** : Generated bitstream from Vivado for use in Vitis
      - ***constraints_file.xdc*** : Nexys A7-100T board contraints (not required for build)
-     - ***HDL/*** : Contains all HDL source of the demonstrator FPGA design (not required for build)
+     - ***HDL/*** : Contains all VHDL source code for the demonstrator FPGA design (not required for build)
      - ***setup_text_files/*** : Text files of SNN parameters used during Vivado synthesis (not required for build)
 
-- RISC-V
-     - ***design_1_wrapper.xsa*** : Generated bitstream from Vivado for use in Vitis
-     - ***constraints_file.xdc*** : Nexys A7-100T board contraints (not required for build)
-     - ***HDL/*** : Contains all HDL source of the demonstrator FPGA design (not required for build)
-     - ***setup_text_files/*** : Text files of SNN parameters used during Vivado synthesis (not required for build)
+- neorv32-main
+     - ***rtl/*** : Contains all VHDL source code for the RISC-V CPU - Neorv32 (not required for build)
+     - ***sim/*** : Contains all simulation resources for the RISC-V CPU - Neorv32 (not required for build)
+     - ***sw/*** : Contains software framework for the RISC-V CPU - Neorv32 (not required for build).....
+  
+          The motor control C and disassembled source code can be found: `sw/examples/my_code_ISCAS_demo`
 
 ---
 
@@ -41,7 +42,7 @@ This repository contains the source code for the Smart Watchdog demonstrator pre
 - Vitis: **2023.1**
 - FPGA platform: **Nexys A7-100T**
 
-⚠️ **Note:** This design is hardware-dependent and requires custom PCBs.  
+⚠️ **Note:** This design is hardware-dependent and requires the custom PCBs.  
 The build instructions can still be followed, but the system will not function without them!
 
 ---
@@ -54,7 +55,7 @@ There are two stages for building the demonstrator, which must be performed in o
 
 **Step 1** - Download the repo zip file (if not already done so).
 
-**Step 2** - Open the Windowsterminal:
+**Step 2** - Open the Windows terminal:
 
 `cmd`
 
