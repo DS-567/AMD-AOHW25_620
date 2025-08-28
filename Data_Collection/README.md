@@ -11,7 +11,7 @@ It features:
 
 ## Data Collection Contents 📦
 
-- src
+- MicroBlaze
      - ***main.c*** : Main C code that runs on the MicroBlaze
      - ***platform.c***  : Platform-specific functions
      - ***platform.h***  : Platform-specific header file
@@ -28,7 +28,7 @@ It features:
      - ***sim/*** : Contains all simulation resources for the RISC-V CPU - Neorv32 (not required for build)
      - ***sw/*** : Contains software framework for the RISC-V CPU - Neorv32 (not required for build)
 
-**Note:** The heap sort C source code can be found: `neorv32-main/sw/example/my_code_heap_sort`
+**Note:** The heap sort C source code can be found: `neorv32-main/sw/examples/my_code_heap_sort`
 
 ---
 
