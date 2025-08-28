@@ -6,6 +6,8 @@ Team number: **AMD-AOHW25_620**
 
 ## Project Overview
 
+
+
 ---
 
 ## Table of Contents
@@ -46,7 +48,9 @@ Some text here...
 
 ## 4. Builds 🚀
 
-Some text here...
+1. Smart Watchdog Demonstrator
+
+   - Include links to youtibe videos of the demo
 
 ---
 
