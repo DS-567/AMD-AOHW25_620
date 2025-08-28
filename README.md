@@ -118,15 +118,15 @@ LinkedIn: https://www.linkedin.com/in/david-simpson-040189221/
 
 ## 6. Publications 📃
 
-- **ISCAS 2025 conference paper:**
+- **ISCAS 2025 conference paper:** [![](https://img.shields.io/badge/IEEE-Paper-blue)](https://ieeexplore.ieee.org/document/11044018)
 
     *D. Simpson, J. Harkin, M. McElholm, and L. McDaid, “Smart Watchdog Mechanism for Fault Detection in RISC-V,” in 2025 IEEE International Symposium on Circuits and Systems (ISCAS), IEEE, May 2025, pp. 1–5. doi: 10.1109/ISCAS56072.2025.11044018.*
 
-- **ISCAS 2025 live demonstrator paper:**
+- **ISCAS 2025 live demonstrator paper:** [![](https://img.shields.io/badge/IEEE-Demo-blue)](https://ieeexplore.ieee.org/document/11044164)
 
     *D. Simpson, J. Harkin, M. McElholm, and L. McDaid, “Live Demonstration: Smart Watchdog Mechanism for Real-time Fault Detection in RISC-V,” in 2025 IEEE International Symposium on Circuits and Systems (ISCAS), IEEE, May 2025, pp. 1–1. doi: 10.1109/ISCAS56072.2025.11044164.*
 
-- **TCAS II: Express Briefs journal paper (Open Access):**
+- **TCAS II: Express Briefs journal paper (Open Access):** [![](https://img.shields.io/badge/IEEE-Demo-blue)](https://ieeexplore.ieee.org/document/11051055)
 
     *D. Simpson, J. Harkin, M. McElholm, and L. McDaid, “Smart Watchdog for RISC-V: A Novel Spiking Neural Network Approach to Fault Detection,” IEEE Transactions on Circuits and Systems II: Express Briefs, pp. 1–1, 2025, doi: 10.1109/TCSII.2025.3583042.*
 
