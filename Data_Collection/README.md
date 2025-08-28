@@ -7,6 +7,8 @@ It features:
 - FPGA backend built using Vitis, running on an AMD VC709 evaluation board (Virtex-7 FPGA).
 - Stream RISC-V instruction data to a serial terminal over UART.
 
+ADD BLOCK DIAGRAM OF ARCHITECTURE?
+
 ---
 
 ## Data Collection Contents 📦
