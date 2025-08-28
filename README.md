@@ -1,6 +1,6 @@
 # *From Brain-Inspiration to Silicon-Realisation:* SNN-based Smart Watchdogs for RISC-V Fault Detection
 
-*Contribution to the AMD Open Hardware Design Competition 2025: Spiking Neural Network (SNN)-based Smart Watchdogs for RISC-V Fault Detection*
+*Contribution to the AMD Open Hardware Design Competition 2025: Spiking Neural Network (SNN)-based Smart Watchdogs for RISC-V Fault Detection*. Repo contains a complete demonstrator of the prototype with supporting documentation.
 
 Team number: **AMD-AOHW25_620**
 
@@ -58,7 +58,11 @@ This project developed the first brain-inspired SNN-based ***smart watchdog***, 
 
 ## 2. Methodology ⚙️
 
-a full ML workflow 
+A full ML workflow was developed from scratch in the PhD:
+- Custom data collection hardware architecture created to gather training data
+- Custom feature extraction algorithm
+- SNN model trained using SNNTorch (98% accuracy at regonising control flow errors
+- 
 
 <p align="center">
   <img src="assets/methodology.PNG" alt="Methodology" width="600"/>
