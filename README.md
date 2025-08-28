@@ -22,7 +22,7 @@ This project developed the first brain-inspired SNN-based ***smart watchdog***, 
 
 [1. Motivation 🧠](#1-motivation-)
 
-[2. Methodology ⚙️](#2-methodology-)
+[2. Methodology ⚙️](#2-methodology)
 
 [3. FPGA Implementation 💻](#3-fpga-implementation-)
 
