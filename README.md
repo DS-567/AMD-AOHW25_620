@@ -1,6 +1,6 @@
 # *From Brain-Inspiration to Silicon-Realisation:* SNN-based Smart Watchdogs for RISC-V Fault Detection
 
-*Contribution to the AMD Open Hardware Design Competition 2025: SNN-based Smart Watchdogs for RISC-V Fault Detection*
+*Contribution to the AMD Open Hardware Design Competition 2025: Spiking Neural Network (SNN)-based Smart Watchdogs for RISC-V Fault Detection*
 
 Team number: **AMD-AOHW25_620**
 
@@ -8,7 +8,13 @@ Team number: **AMD-AOHW25_620**
 
 With the complexity and miniscule feature sizes of modern processor architectures, temporary faults as a result of manufacturing defects and radiation-induced soft errors pose serious reliability concerns for CPUs deployed in safety-critical embedded applications. Fault detection mechanisms are required to monitor and detect faults to ensure hardware integrity. 
 
-This project explored a brain-inspired ***smart watchdog*** capable of real-time monitoring and fault detection in embedded processors, inspired by desirable traits of the biological brain, such as *efficiency* and *dependability*. The smart watchdog was implemented on AMD FPGAs and validated with a real-world RISC-V processor, highlighting the effectiveness of AMD FPGA platforms for research applications.
+This project explored a brain-inspired SNN-based ***smart watchdog***, capable of real-time monitoring and fault detection in embedded processors, inspired by desirable traits of the biological brain, such as *efficiency* and *dependability*. The smart watchdog was implemented on AMD FPGAs and validated with a real-world RISC-V processor, highlighting the effectiveness of AMD FPGA platforms for research applications.
+
+Conceptually, a SNN can be trained to distinguish between normal execution and control-flow errors at instruction level in a RISC-V CPU by monitoring key registers or logic signals. The SNNs decisions are represented with output spikes which can be decoded to determine the inference result.
+
+<p align="center">
+  <img src="assets/smart_watchdog_concept.PNG" alt="Smart Watchdog" width="400"/>
+</p>
 
 ---
 
@@ -32,13 +38,23 @@ This project explored a brain-inspired ***smart watchdog*** capable of real-time
 
 ## 1. Motivation 🧠
 
-The human brain exhibits exceptional efficiency and computation 
+- A watchdog should provide:
+   -    ***Minimal power and area overheads***
+   -    ***Effective fault detection***
+   -    ***Robustness to failure***
 
-operating realibly over a long period of time (lifelong)
+- The human brain showcases:
+   -    ***Efficient computation***
+   -    ***Complex learning***
+   -    ***Self-repairing capability***
 
-Embedded systems face strict power, area and performance budgets, which are all affected by watchdog
+- Spiking Neural Networks (SNNs):
+   -    Capture ***human brain dynamics*** most closely
+   -    Offer more ***efficient*** and ***hardware-friendly computing***
+   -    Realize ***self-repair*** via neuro-glial integration (astrocytes)
+   -    Could form the basis of a novel, smarter watchdog mechanism!
 
-The aim of this PhD was determine if SNNs could 
+**This PhD project aims to evaluate the effectiveness of SNNs for fault detection in a RISC-V processor architecture**
 
 ---
 
