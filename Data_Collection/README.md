@@ -38,47 +38,36 @@ It features:
 - FPGA platform: **AMD VC709**
 - A serial terminal: E.g. **CoolTerm** (or equivalent)
 
-⚠️ **Note:** This design is hardware-dependent and requires the custom PCBs.  
-The build instructions can still be followed, but the system will not function without them!
+⚠️ **Note:** This design is hardware-dependent and can only be ran on the AMD VC709 board!  
 
 ---
 
  ## Build Steps to Run the Demonstrator 🔨
 
-There are two stages for building the demonstrator, which must be performed in order.
+These stages for building the data collection design must be performed in the following order:
 
- ## 1. Python GUI Build 📺
+ ## 1. Serial Terminal Setup 📺
 
-**Step 1** - Download the repo zip file (if not already done so).
+**Step 1** - Power up the VC709 FOGA board and plug both Micro-USB port (JTAG) and Mini USB (UART) into the board and two USB ports on a PC.
 
-**Step 2** - Open the Windows terminal:
+**Step 2** - Open a serial terminal. This design has been veriried and used successfuly with CoolTerm (but others equivalent terminals should work). Setup the serial port to the following: 
 
-`cmd`
+- Baud rate: ***230,400***
+- data bits: ***8***
+- Parity bits: ***None***
+- Stop bits: ***1***
+- DTR: ***On***
+- RTS: ***On***
 
-and navigate to folder:
+ Ensure the following terminal settings:
 
-`/AMD-AOHW25_620/Demonstrator/sw/Python_GUI`
+ - Terminal mode: ***Raw mode***
 
-**Step 3** - Create and activate a virtual environment (windows):
-         
-`[PATH_TO_PYTHON39] -m venv venv`
+  Ensure the following file capture settings:
 
-`venv\Scripts\activate`
-
-
-**Step 4** - Install dependencies:
-
-`pip install -r requirements.txt`
-
-**Step 5** - Plug in the Nexys A7-100T FPGA board. Find the COM port in Device Manager and update `uart_config.json,` e.g.
-
-`"COM1"`.
-
-**Step 6** - Run the script:
-
-`python ISCAS_demo_gui.py`
-
-A blank GUI should pop-up.
+ - Capture format: ***Plain Text***
+ 
+**Step 3** - Finally make the serial connection (connect).  
 
 ---
 
