@@ -77,7 +77,7 @@ These stages for building the data collection design must be performed in the fo
 
 **Step 2** - Select the tab **"create a new platform from hardware (XSA)"**. Browse for the **"design_1_wrapper.xsa"**, found in:
 
-`/AMD-AOHW25_620/Demonstrator/hw/vivado/design_1_wrapper.xsa`.
+`/AMD-AOHW25_620/Data_Collection/design_1_wrapper.xsa`.
 
 **Step 3** - **Name the application project** demo (or anything), **click Next>** and **click Next>** again to skip domain.
 
