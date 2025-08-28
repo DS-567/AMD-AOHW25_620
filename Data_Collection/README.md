@@ -140,7 +140,7 @@ UART is a slow protocol and this will take a few minutes. Grab a coffee ;)
 **Step 3** - After 10,000 clock cycles of RISC-V instruction data is streamed, close the text file:
 
 - 1. Press `ctrl` + `shift` + `r` to save the text file locally.
-- 2. And return home by pressing the `m` key followed by `Enter'.
+- 2. And return home by pressing the `m` key followed by `Enter`.
 
 ---
 
