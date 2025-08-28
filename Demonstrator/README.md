@@ -9,9 +9,8 @@ It features:
 - FPGA backend built using Vitis, running on the Nexys A7-100T board.
 
 <p align="center">
-  <img src="assets/demonstrator_setup.PNG" alt="Demonstrator setup" width="400"/>
+  <img src="../assets/demonstrator_setup.PNG" alt="Demonstrator setup" width="1000"/>
 </p>
-
 ---
 
 ## Demonstrator Contents 📦
