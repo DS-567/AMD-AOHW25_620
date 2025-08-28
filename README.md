@@ -16,7 +16,7 @@ Team number: **AMD-AOHW25_620**
 
 [3. FPGA Implementation](#3-fpga-implementation)
 
-[4. Builds?](#4-builds)
+[4. Builds](#4-builds)
 
 [5. Contributors](#5-contributors)
 
