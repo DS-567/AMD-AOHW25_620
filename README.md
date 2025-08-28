@@ -98,15 +98,19 @@ Full details of the smart watchdog implementation can be found here: [Implementa
 
 ## 4. Builds 🚀
 
-To demonstrate the smart watchdog 
+There are 2??? source codes provided for building: ***1. A smart watchdog demonstrator*** and the ***2. data collection framework???***, as detailed below.
 
-1. Smart Watchdog Demonstrator
+### 1. Smart Watchdog Demonstrator
+
+In the dmeonstrator, the smart watchdog hardware component is deployed to monitor the Neorv32 processor executing a motor control task, resembling a safety-critical and realistic workload. Custom PCBs and a Python GUI were created to interface with the demo and to visualise data and performance. Faults can be injected into the RISC-V program counter to realise control flow errors during program execution. The smart watchdog reponse and fault detection capability can be observed in great detail.
 
 <p align="center">
   <img src="assets/hardware_setup.PNG" alt="Physical hardware Setup" width="450"/>
 </p>
 
-   - Include links to youtibe videos of the demo
+An additional detailed video of the demonstrator can be found: [Demonstrator Video](https://youtu.be/D4o1u4qUvNw)
+
+### 1. Data Collection Framework
 
 ---
 
