@@ -52,7 +52,7 @@ This project developed the first brain-inspired SNN-based ***smart watchdog***, 
    -    Realize ***self-repair*** via neuro-glial integration (astrocytes)
    -    Could form the basis of a novel, smarter watchdog mechanism!
 
-**This PhD project aims to evaluate the effectiveness of SNNs for fault detection in a RISC-V processor architecture, with the objective of realising an efficient but also dependable smarter watchdog circuit.**
+**This PhD project aims to evaluate the effectiveness of SNNs for fault detection in a RISC-V processor architecture, with the objective of realising an efficient, but also more reliable watchdog circuit.**
 
 ---
 
