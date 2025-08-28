@@ -57,9 +57,11 @@ com port driver check?
 
 ⚠️ **Note:** If the drivers are out of date, the drivers can be found here https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads. Simply download the drivers and search manually for the drivers in your downloads folder.
 
-Once the COM port appears as shown in the image below, move to step 3.
+Once the COM port appears as shown below, move to step 3.
 
-ADD IMAGE OF COM PORT
+<p align="center">
+  <img src="../assets/com_port.PNG" alt="Com Port" width="300"/>
+</p>
 
 **Step 3** - Open a serial terminal. This design has been used successfuly with CoolTerm (however other equivalent terminals should work). Setup the serial port to the following: 
 
