@@ -86,11 +86,11 @@ ADD IMAGE OF COM PORT
 
 `/AMD-AOHW25_620/Data_Collection/design_1_wrapper.xsa`.
 
-**Step 3** - **Name the application project** data_collection (or anything), **click Next>** and **click Next>** again to skip domain.
+**Step 3** - **Name the application project** data_collection (or anything), ***click Next>*** and ***click Next>*** again to skip domain.
 
-**Step 4** - In template, select **Empty Application (C)** and **Click Finish>**.
+**Step 4** - In template, select ***Empty Application (C)*** and ***Click Finish>***.
 
-**Step 5** - **Right-click the `/src` folder** → **Import Sources**. Browse and select the `MicroBlaze` folder found in: 
+**Step 5** - ***Right-click the `/src` folder*** → ***Import Sources***. Browse and select the `MicroBlaze` folder found in: 
 
 `/AMD-AOHW25_620/Data_Collection/MicroBlaze`, and check the boxes to include all 4 source files:
 
@@ -103,7 +103,7 @@ and **Click Finish**.
 
 **Step 6** - Build the project.
 
-**Step 7** - Set up a **single debug application** as the run configuration using the run dropdown icon, and **Click Run>**.
+**Step 7** - Set up a ***single debug application*** as the run configuration using the run dropdown icon, and ***Click Run>***.
 
 ✅ Once the FPGA is programmed, the following information should be printed on the terminal, completing the build.
 
@@ -115,5 +115,44 @@ and **Click Finish**.
 
  ## 1. To Collect Data 🗂️
 
+ There are two modes of operation: ***Manual*** and ***Auto***.
+
+- ***Auto*** is the main mode of collecting data and requires configuring fault injection runs in software using the MicroBlaze, i.e. `main.c`.
+
+- ***Manual*** is for running a single C application on the RISC-V just once and was useful for de-bugging in the early stages. For a simple demo, we will use ***Manual*** operation
+
+**Step 1** - Enter the following commands to setup the time to run the RISC-V application for (the bare minimum command necessary):
+
+- 1. Enter `1` followed by the `Enter' key.
+- 2. Enter `14` followed by the `Enter' key.
+- 3. Enter `10,000` followed by the `Enter' key.
+- 4. And return home by pressing the `m` key followed by the `Enter' key.
+- 5. Then enter `7` followed by the `Enter' key.
  
+**Step 2** - The design is now ready to run the RISC-V C application for 10,000 clock cycles. The data that is about to be streamed needs to be saved:
+
+- 1. On CoolTerm, press the ***clear data*** icon - clearing the terminal window.
+- 2. Press 'ctrl` + `r` and save the text file locally.
+- 3. Enter `1` followed by the `Enter' key - and the RISC-V instruction data should begin streaming off-FPGA to the text file.
+ 
+UART is a slow protocol and this will take a few minutes. Grab a coffee ;)
+
+**Step 3** - After 10,000 clock cycles of RISC-V instruction data is streamed, close the text file:
+
+- 1. Press 'ctrl` + `shift` + `r` to save the text file locally.
+- 2. And return home by pressing the `m` key followed by `Enter'.
+
+---
+
+Open the text file that was just created. This is the RISC-V instruction data from Neorv32 executed!
+
+- The `RAM_result_data_00` -> `RAM_result_data_19` shows the sorted 20 numbers from the C heap sort application on Neorv32.
+
+- Each subsequent line shows the instruction data for each of the 10,000 clock cycles.
+
+- The `CPU_state= SLEEP` is the `main()` returning 0 after the heap sort completed, and this takes almost 10,000 cycles.
+
+Faults can be injected to capture data to see how the core behaves. This was the data collection framework that collected data to train the SNN model in this PhD! In Auto mode, lots of data can be gathered in a single text file by repeating the C application on the RISC-V repeately with differnet faults setup, as opposed to what we demonstrated here in manual mode with just a single application execution.
+
+
 
