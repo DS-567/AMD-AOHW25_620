@@ -102,6 +102,10 @@ To demonstrate the smart watchdog
 
 1. Smart Watchdog Demonstrator
 
+<p align="center">
+  <img src="assets/hardware_setup.PNG" alt="Physical hardware Setup" width="450"/>
+</p>
+
    - Include links to youtibe videos of the demo
 
 ---
