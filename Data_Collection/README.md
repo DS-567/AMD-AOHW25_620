@@ -79,13 +79,13 @@ These stages for building the data collection design must be performed in the fo
 
 `/AMD-AOHW25_620/Data_Collection/design_1_wrapper.xsa`.
 
-**Step 3** - **Name the application project** demo (or anything), **click Next>** and **click Next>** again to skip domain.
+**Step 3** - **Name the application project** data_collection (or anything), **click Next>** and **click Next>** again to skip domain.
 
 **Step 4** - In template, select **Empty C Application (C)** and **Click Finish>**.
 
 **Step 5** - **Right-click the `/src` folder** → **Import Sources**. Browse and select the `MicroBlaze` folder found in: 
 
-`/AMD-AOHW25_620/Demonstrator/sw/MicroBlaze`, and check the boxes to include the 4 source files:
+`/AMD-AOHW25_620/Data_Collection/MicroBlaze`, and check the boxes to include the 4 source files:
 
 `main.c`
 `platform.c`
@@ -98,5 +98,14 @@ These stages for building the data collection design must be performed in the fo
 
 ---
 
-✅ Once the FPGA is programmed, the Python GUI will initialize, completing the demonstrator build.
+✅ Once the FPGA is programmed, the following information should be printed on the terminal, completing the demonstrator build.
+
+
+---
+
+
+
+ ## 1. To Collect Data 🗂️
+
+ 
 
