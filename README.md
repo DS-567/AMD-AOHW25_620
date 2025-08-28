@@ -4,6 +4,8 @@
 
 Team number: **AMD-AOHW25_620**
 
+See the [report](/Report/) or the [publications](#6-publications-) for more details on the project. 
+
 ## Project Overview
 
 With the complexity and miniscule feature sizes of modern processor architectures, temporary faults as a result of manufacturing defects and radiation-induced soft errors pose serious reliability concerns for CPUs deployed in safety-critical embedded applications. Fault detection mechanisms are required to monitor and detect faults to ensure hardware integrity. 
@@ -61,8 +63,10 @@ This project developed the first brain-inspired SNN-based ***smart watchdog***, 
 A full ML workflow was developed from scratch in the PhD:
 - Custom data collection hardware architecture created to gather training data
 - Custom feature extraction algorithm
-- SNN model trained using SNNTorch (98% accuracy at regonising control flow errors
-- 
+- SNN model trained using SNNTorch (~98% accuracy)
+- Implemented the SNN model in VHDL and instantiated inside the smart watchdog
+- Validated the smart watchdog concept on FPGA (retained ~98% accuracy)
+- Created a final demonstrator of the smart watchdog on FPGA
 
 <p align="center">
   <img src="assets/methodology.PNG" alt="Methodology" width="600"/>
