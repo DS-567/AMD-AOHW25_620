@@ -53,7 +53,7 @@ This project developed the first brain-inspired SNN-based ***smart watchdog***, 
 - Spiking Neural Networks (SNNs):
    -    Capture ***human brain dynamics*** most closely
    -    Offer more ***efficient*** and ***hardware-friendly computing***
-   -    Realize ***self-repair*** via neuro-glial integration (astrocytes)
+   -    Realise ***self-repair*** via neuro-glial integration (astrocytes)
    -    Could form the basis of a novel, smarter watchdog mechanism!
 
 **This PhD project aims to evaluate the effectiveness of SNNs for fault detection in a RISC-V processor architecture, with the objective of realising an efficient, but also more reliable watchdog circuit.**
