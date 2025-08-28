@@ -47,7 +47,7 @@ It features:
      - ***Motor encoder PCB*** : Encoder speed feedback pulses of the motor for Neorv32 (12v to 3.3V)
      - ***Motor fault injection and smart watchdog monitoring PCB*** : Used to setup and inject faults into Neorv32 and observe the smart watchdog response
 
-**Note:** More information on the custom PCBs can be found: [`hw/PCBs/`](/hw/PCBs).
+**Note:** More information on the custom PCBs can be found: [`hw/PCBs/`](/hw/PCBs/).
 
 ---
 
