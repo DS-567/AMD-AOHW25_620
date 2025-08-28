@@ -103,11 +103,13 @@ There are 2??? source codes provided for building: ***1. A smart watchdog demons
 
 ### 1. Smart Watchdog Demonstrator
 
-In the dmeonstrator, the smart watchdog hardware component is deployed to monitor the Neorv32 processor executing a motor control task, resembling a safety-critical and realistic workload. Custom PCBs and a Python GUI were created to interface with the demo and to visualise data and performance. Faults can be injected into the RISC-V program counter to realise control flow errors during program execution. The smart watchdog reponse and fault detection capability can be observed in great detail.
+A demonstrator was created and presented at ISCAS 2025, which deployed the smart watchdog on FPGA to monitor the Neorv32 processor executing a motor control task, resembling a safety-critical and realistic workload. Custom PCBs and a Python GUI were created to interface with the demo and to visualise data and performance. Faults can be injected into the RISC-V program counter to realise control flow errors during program execution. The smart watchdog reponse and fault detection capability can be observed in great detail.
 
 <p align="center">
   <img src="assets/hardware_setup.PNG" alt="Physical hardware Setup" width="450"/>
 </p>
+
+Build instructions to re-produce the design can be found here: [Demonstrator](/Demonstrator)
 
 An additional detailed video of the demonstrator can be found: [Demonstrator Video](https://youtu.be/D4o1u4qUvNw)
 
