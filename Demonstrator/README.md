@@ -1,6 +1,6 @@
 # Demonstrator Overview 🔍 
 
-This repository contains the source code for the Smart Watchdog demonstrator presented at ISCAS 2025 and submitted to the [AMD Open Hardware Design Competition 2025]. It includes a Python GUI frontend and an FPGA backend built in Vitis, running on the Nexys A7-100T board. The FPGA bitstream was generated using Vivado.
+This repository contains the source code for the Smart Watchdog demonstrator presented at ISCAS 2025 and submitted to the [AMD Open Hardware Design Competition 2025].
 
 It features:
 - Custom PCBs for operation.
