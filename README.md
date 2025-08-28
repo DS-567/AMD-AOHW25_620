@@ -8,7 +8,7 @@ Team number: **AMD-AOHW25_620**
 
 With the complexity and miniscule feature sizes of modern processor architectures, temporary faults as a result of manufacturing defects and radiation-induced soft errors pose serious reliability concerns for CPUs deployed in safety-critical embedded applications. Fault detection mechanisms are required to monitor and detect faults to ensure hardware integrity. 
 
-This project presents a brain-inspired ***smart watchdog*** capable of real-time monitoring and fault detection in embedded processors, inspired by desirable traits of the biological brain, such as *efficiency* and *dependability*. The smart watchdog was implemented on AMD FPGAs and validated with a real-world RISC-V processor, highlighting the effectiveness of AMD FPGA platforms for research applications.
+This project explored a brain-inspired ***smart watchdog*** capable of real-time monitoring and fault detection in embedded processors, inspired by desirable traits of the biological brain, such as *efficiency* and *dependability*. The smart watchdog was implemented on AMD FPGAs and validated with a real-world RISC-V processor, highlighting the effectiveness of AMD FPGA platforms for research applications.
 
 ---
 
@@ -32,7 +32,13 @@ This project presents a brain-inspired ***smart watchdog*** capable of real-time
 
 ## 1. Motivation 🧠
 
-Some text here...
+The human brain exhibits exceptional efficiency and computation 
+
+operating realibly over a long period of time (lifelong)
+
+Embedded systems face strict power, area and performance budgets, which are all affected by watchdog
+
+The aim of this PhD was determine if SNNs could 
 
 ---
 
