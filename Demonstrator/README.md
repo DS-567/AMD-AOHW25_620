@@ -8,8 +8,9 @@ It features:
 - Design bitstream generated from Vivado.
 - FPGA backend built using Vitis, running on the Nexys A7-100T board.
 
-
-
+<p align="center">
+  <img src="assets/demonstrator_setup.PNG" alt="Demonstrator setup" width="400"/>
+</p>
 
 ---
 
