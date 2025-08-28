@@ -85,7 +85,7 @@ The smart watchdog has three main components: ***Control FSM***, ***feature extr
 - The SNN classifies the instruction as either normal execution or a control flow error
 - This process repeats until there all instructions have been classified (i.e. FIFO is empty)
 
-Full details of the smart watchdog implementation can be found here: [Implementation](/add_link_to_directory../)
+Full details of the smart watchdog implementation can be seen in the [report](/Report.pdf). 
 
 <p align="center">
   <img src="assets/smart_watchdog_implementation.PNG" alt="Smart Watchdog Implementation" width="450"/>
