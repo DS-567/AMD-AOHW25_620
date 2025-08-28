@@ -10,8 +10,6 @@ With the complexity and miniscule feature sizes of modern processor architecture
 
 This project explored a brain-inspired SNN-based ***smart watchdog***, capable of real-time monitoring and fault detection in embedded processors, inspired by desirable traits of the biological brain, such as *efficiency* and *dependability*. The smart watchdog was implemented on AMD FPGAs and validated with a real-world RISC-V processor, highlighting the effectiveness of AMD FPGA platforms for research applications and the first instance of a SNN being used to detect faults in a processing architecture.
 
-Conceptually, a SNN can be trained to distinguish between normal execution and control-flow errors at instruction level in a RISC-V CPU by monitoring key registers or logic signals. The SNNs decisions are represented with output spikes which can be decoded to determine the inference result.
-
 <p align="center">
   <img src="assets/smart_watchdog_concept.PNG" alt="Smart Watchdog Concept" width="400"/>
 </p>
