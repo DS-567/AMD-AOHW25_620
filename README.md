@@ -2,7 +2,7 @@
 
 Team number: **AOHW25_620**
 
-*Contribution to the AMD Open Hardware Design Competition 2025: Spiking Neural Network (SNN)-based Smart Watchdogs for RISC-V Fault Detection*. This repository contains a complete prototype demonstrator of the smart watchdog with supporting documentation.
+*Contribution to the AMD Open Hardware Design Competition 2025: Spiking Neural Network (SNN)-based Smart Watchdogs for RISC-V Fault Detection*.
 
 2 minute Youtube video: [YouTube](https://youtu.be/D4o1u4qUvNw)
 
