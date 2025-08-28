@@ -5,21 +5,13 @@ This repository contains the source code for the collection framework developed 
 It features:
 - Design bitstream generated from Vivado.
 - FPGA backend built using Vitis, running on an AMD VC709 evaluation board (Virtex-7 FPGA).
+- Stream RISC-V instruction data to a serial terminal over UART
 
-<p align="center">
-  <img src="../assets/demonstrator_setup.PNG" alt="Demonstrator setup" width="1000"/>
-</p>
 ---
 
-## Demonstrator Contents 📦
+## Data Collection Contents 📦
 
 ### /sw
-- Python GUI
-     - ***ISCAS_demo_gui.py*** : Main Python GUI script
-     - ***requirements.txt***  : Python dependencies
-     - ***uart_config.json***  : UART configuration
-     - ***images/*** : Images for GUI
-
 - MicroBlaze
      - ***main.c*** : Main C code that runs on the MicroBlaze
      - ***platform.c***  : Platform-specific functions
@@ -29,31 +21,23 @@ It features:
 ### /hw
 - Vivado
      - ***design_1_wrapper.xsa*** : Generated bitstream from Vivado for use in Vitis
-     - ***constraints_file.xdc*** : Nexys A7-100T board contraints (not required for build)
+     - ***constraints_file.xdc*** : AMD VC709 board contraints (not required for build)
      - ***HDL/*** : Contains all VHDL source code for the demonstrator FPGA design (not required for build)
-     - ***setup_text_files/*** : Text files of SNN parameters used during Vivado synthesis (not required for build)
 
 - neorv32-main
      - ***rtl/*** : Contains all VHDL source code for the RISC-V CPU - Neorv32 (not required for build)
      - ***sim/*** : Contains all simulation resources for the RISC-V CPU - Neorv32 (not required for build)
      - ***sw/*** : Contains software framework for the RISC-V CPU - Neorv32 (not required for build)
 
-**Note:** The motor control C and disassembled source code can be found: `neorv32-main/sw/example/my_code_iscas_demo`
-
-- Custom PCBs
-     - ***Motor control PCB*** : Digital inputs to start, stop and change the direction and speed of the motor
-     - ***Motor encoder PCB*** : Encoder speed feedback pulses of the motor for Neorv32 (12v to 3.3V)
-     - ***Motor fault injection and smart watchdog monitoring PCB*** : Used to setup and inject faults into Neorv32 and observe the smart watchdog response
-
-**Note:** More information on the custom PCBs can be found: [`hw/PCBs/`](/Demonstrator/hw/PCBs/).
+**Note:** The heap sort C source code can be found: `neorv32-main/sw/example/my_code_heap_sort`
 
 ---
 
 ## Demonstrator Dependencies 📝
 
-- Python: **3.9.10**
 - Vitis: **2023.1**
-- FPGA platform: **Nexys A7-100T**
+- FPGA platform: **AMD VC709**
+- A serial terminal: E.g. **CoolTerm** (or equivalent)
 
 ⚠️ **Note:** This design is hardware-dependent and requires the custom PCBs.  
 The build instructions can still be followed, but the system will not function without them!
