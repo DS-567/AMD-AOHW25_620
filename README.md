@@ -12,19 +12,19 @@ Team number: **AMD-AOHW25_620**
 
 ## Table of Contents
 
-[1. Motivation 🧠](#1-motivation)
+[1. Motivation 🧠](#1-motivation-)
 
-[2. Methodology ⚙️](#2-methodology)
+[2. Methodology ⚙️](#2-methodology-)
 
-[3. FPGA Implementation 💻](#3-fpga-implementation)
+[3. FPGA Implementation 💻](#3-fpga-implementation-)
 
-[4. Builds 🚀](#4-builds)
+[4. Builds 🚀](#4-builds-)
 
-[5. Contributors 🤝](#5-contributors)
+[5. Contributors 🤝](#5-contributors-)
 
-[6. Publications 📃](#6-publications)
+[6. Publications 📃](#6-publications-)
 
-[7. Acknowledgements ✨](#7-acknowledgements)
+[7. Acknowledgements ✨](#7-acknowledgements-)
 
 ---
 
