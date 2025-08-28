@@ -146,6 +146,8 @@ UART is a slow protocol and this will take a few minutes. Grab a coffee ;)
 
 ---
 
+ ## Data Collection Summary 📖
+ 
 Open the text file that was just created. This is the RISC-V instruction data from Neorv32 executed!
 
 - The `RAM_result_data_00` -> `RAM_result_data_19` shows the sorted 20 numbers from the C heap sort application on Neorv32.
