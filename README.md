@@ -72,6 +72,7 @@ A full ML workflow was developed from scratch in the PhD:
   <img src="assets/methodology.PNG" alt="Methodology" width="600"/>
 </p>
 
+
 ---
 
 ## 3. FPGA Implementation 💻
