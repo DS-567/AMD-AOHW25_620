@@ -46,11 +46,22 @@ It features:
 
 These stages for building the data collection design must be performed in the following order:
 
+Firstly download the repo ZIP file (if not already done so).
+
  ## 1. Serial Terminal Setup 📺
 
 **Step 1** - Power up the VC709 FOGA board and plug both Micro-USB port (JTAG) and Mini USB (UART) into the board and two USB ports on a PC.
+
 com port driver check?
-**Step 2** - Open a serial terminal. This design has been veriried and used successfuly with CoolTerm (but others equivalent terminals should work). Setup the serial port to the following: 
+**Step 2** - Open the Windows device manager and check if drivers for the virtual COM port need to be installed.
+
+⚠️ **Note:** If the drivers are out of date, the drivers can be found here https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads. Simply download the drivers and search manually for the drivers in your downloads folder.
+
+Once the COM port appears as shown in the image below, move to step 3.
+
+ADD IMAGE OF COM PORT
+
+**Step 3** - Open a serial terminal. This design has been used successfuly with CoolTerm (however other equivalent terminals should work). Setup the serial port to the following: 
 
 - Baud rate: ***230,400***
 - data bits: ***8***
@@ -59,21 +70,17 @@ com port driver check?
 - DTR: ***On***
 - RTS: ***On***
 
- Ensure the following terminal settings:
-
- - Terminal mode: ***Raw mode***
-
-  Ensure the following file capture settings:
+  Also ensure the following file capture settings:
 
  - Capture format: ***Plain Text***
  
-**Step 3** - Finally make the serial connection (connect).  
+**Step 4** - Finally make the serial connection (connect).  
 
 ---
 
  ## 2. FPGA Build (Vitis IDE) 🖥️
 
-**Step 1** - Open Vitis IDE, create a clean workpace and start a new application project.
+**Step 1** - Open Vitis IDE, create a clean workpace and start a new application project. Skip the welcome page by pressing ***Next>***.
 
 **Step 2** - Select the tab **"create a new platform from hardware (XSA)"**. Browse for the **"design_1_wrapper.xsa"**, found in:
 
@@ -81,22 +88,24 @@ com port driver check?
 
 **Step 3** - **Name the application project** data_collection (or anything), **click Next>** and **click Next>** again to skip domain.
 
-**Step 4** - In template, select **Empty C Application (C)** and **Click Finish>**.
+**Step 4** - In template, select **Empty Application (C)** and **Click Finish>**.
 
 **Step 5** - **Right-click the `/src` folder** → **Import Sources**. Browse and select the `MicroBlaze` folder found in: 
 
-`/AMD-AOHW25_620/Data_Collection/MicroBlaze`, and check the boxes to include the 4 source files:
+`/AMD-AOHW25_620/Data_Collection/MicroBlaze`, and check the boxes to include all 4 source files:
 
 `main.c`
 `platform.c`
 `platform.h`
 `platform_config.h`
 
+and **Click Finish**.
+
 **Step 6** - Build the project.
 
-**Step 7** - Set up a **single debug application** as the run configuration, and **Click Run>**.
+**Step 7** - Set up a **single debug application** as the run configuration using the run dropdown icon, and **Click Run>**.
 
-✅ Once the FPGA is programmed, the following information should be printed on the terminal, completing the demonstrator build.
+✅ Once the FPGA is programmed, the following information should be printed on the terminal, completing the build.
 
 <p align="center">
   <img src="../assets/data_collection_startup_print.PNG" alt="Data Collection Startup Print" width="300"/>
