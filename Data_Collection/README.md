@@ -11,18 +11,17 @@ It features:
 
 ## Data Collection Contents 📦
 
-### /sw
 - src
      - ***main.c*** : Main C code that runs on the MicroBlaze
      - ***platform.c***  : Platform-specific functions
      - ***platform.h***  : Platform-specific header file
      - ***platform_config.h*** : Platform config header file
 
-### /hw
-- Vivado
-     - ***design_1_wrapper.xsa*** : Generated bitstream from Vivado for use in Vitis
-     - ***constraints_file.xdc*** : AMD VC709 board contraints (not required for build)
-     - ***HDL/*** : Contains all VHDL source code for the demonstrator FPGA design (not required for build)
+- ***design_1_wrapper.xsa*** : Generated bitstream from Vivado for use in Vitis
+
+- ***constraints_file.xdc*** : AMD VC709 board contraints (not required for build)
+
+- ***HDL***: Contains all VHDL source code for the data collection FPGA design (not required for build)
 
 - neorv32-main
      - ***rtl/*** : Contains all VHDL source code for the RISC-V CPU - Neorv32 (not required for build)
