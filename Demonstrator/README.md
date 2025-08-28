@@ -76,7 +76,7 @@ There are two stages for building the demonstrator, which must be performed in o
 
 and navigate to folder:
 
-`/Demonstrator/sw/Python_GUI`
+`/AMD-AOHW25_620/Demonstrator/sw/Python_GUI`
 
 **Step 3** - Create and activate a virtual environment (windows):
          
@@ -103,26 +103,28 @@ A blank GUI should pop-up.
 
  ## 2. FPGA Build (Vitis IDE) 🖥️
 
-**Step 1** - Open Vitis IDE with a clean workpace and start a new application project.
+**Step 1** - Open Vitis IDE, create a clean workpace and start a new application project.
 
 **Step 2** - Select the tab **"create a new platform from hardware (XSA)"**. Browse for the **"design_1_wrapper.xsa"**, found in:
 
-`/Demonstrator/hw/design_1_wrapper.xsa` and **click Next>**.
+`/AMD-AOHW25_620/Demonstrator/hw/vivado/design_1_wrapper.xsa`.
 
-**Step 3** - **Name the application project** demo (or anything), and **click Next>**.
+**Step 3** - **Name the application project** demo (or anything), **click Next>** and **click Next>** again to skip domain.
 
-**Step 4** - **Click Next>** again on the domain page.
+**Step 4** - In template, select **Empty C Application (C)** and **Click Finish>**.
 
-**Step 5** - Select **Empty Application (C)** and **Click Next>**.
+**Step 5** - **Right-click the `/src` folder** → **Import Sources**. Browse and select the `MicroBlaze` folder found in: 
 
-**Step 6** - **Right-click the src folder** → **Add Sources** → select the **4 source files** from: `/Demonstrator/sw/MicroBlaze`
+`/AMD-AOHW25_620/Demonstrator/sw/MicroBlaze`, and check the boxes to include the 4 source files:
 
 `main.c`
 `platform.c`
 `platform.h`
 `platform_config.h`
 
-**Step 7** - Set up a **single debug application** and run the configuration.
+**Step 6** - Build the project.
+
+**Step 7** - Set up a **single debug application** as the run configuration, and **Click Run>**.
 
 ---
 
