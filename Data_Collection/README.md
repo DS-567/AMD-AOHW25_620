@@ -49,7 +49,7 @@ These stages for building the data collection design must be performed in the fo
  ## 1. Serial Terminal Setup 📺
 
 **Step 1** - Power up the VC709 FOGA board and plug both Micro-USB port (JTAG) and Mini USB (UART) into the board and two USB ports on a PC.
-
+com port driver check?
 **Step 2** - Open a serial terminal. This design has been veriried and used successfuly with CoolTerm (but others equivalent terminals should work). Setup the serial port to the following: 
 
 - Baud rate: ***230,400***
