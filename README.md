@@ -10,35 +10,43 @@ Team number: **AMD-AOHW25_620**
 
 ## Table of Contents
 
-[1. Motivation](#1-motivation)
+[1. Motivation 🧠](#1-motivation)
 
-[2. Methodology](#2-methodology)
+[2. Methodology ⚙️](#2-methodology)
 
-[3. FPGA Implementation](#3-fpga-implementation)
+[3. FPGA Implementation 💻](#3-fpga-implementation)
 
-[4. Builds](#4-builds)
+[4. Builds 🚀](#4-builds)
 
-[5. Contributors](#5-contributors)
+[5. Contributors 🤝](#5-contributors)
 
-[6. Publications](#6-publications)
+[6. Publications 📃](#6-publications)
 
-[7. Acknowledgements](#7-acknowledgements)
+[7. Acknowledgements ✨](#7-acknowledgements)
 
 ---
 
 ## 1. Motivation 🧠
 
+Some text here...
+
 ---
 
 ## 2. Methodology ⚙️
+
+Some text here...
 
 ---
 
 ## 3. FPGA Implementation 💻
 
+Some text here...
+
 ---
 
-## 4. Builds?
+## 4. Builds 🚀
+
+Some text here...
 
 ---
 
@@ -66,7 +74,7 @@ LinkedIn: https://www.linkedin.com/in/david-simpson-040189221/
 
     *D. Simpson, J. Harkin, M. McElholm, and L. McDaid, “Smart Watchdog for RISC-V: A Novel Spiking Neural Network Approach to Fault Detection,” IEEE Transactions on Circuits and Systems II: Express Briefs, pp. 1–1, 2025, doi: 10.1109/TCSII.2025.3583042.*
 
-## 7. Acknowledgements 
+## 7. Acknowledgements ✨
 
 - This project was funded by a Department for the Economy (DfE) PhD scholarship.
 
