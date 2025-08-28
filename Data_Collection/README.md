@@ -99,11 +99,10 @@ These stages for building the data collection design must be performed in the fo
 ✅ Once the FPGA is programmed, the following information should be printed on the terminal, completing the demonstrator build.
 
 <p align="center">
-  <img src="../assets/data_collection_startup_print.PNG" alt="Data Collection Startup Print" width="1000"/>
+  <img src="../assets/data_collection_startup_print.PNG" alt="Data Collection Startup Print" width="300"/>
 </p>
+
 ---
-
-
 
  ## 1. To Collect Data 🗂️
 
