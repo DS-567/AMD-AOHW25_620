@@ -1,18 +1,18 @@
 # Data Collection Overview 🔍
 
-This repository contains the source code for the collection framework developed during the PhD project to collect RISC-V instruction data train the SNN of the samrt watchdog, which is also submitted to the [AMD Open Hardware Design Competition 2025].
+This repository contains the source code for the collection framework developed during the PhD project to collect RISC-V instruction data train the SNN of the smart watchdog, which is also submitted to the [AMD Open Hardware Design Competition 2025].
 
 It features:
 - Design bitstream generated from Vivado.
 - FPGA backend built using Vitis, running on an AMD VC709 evaluation board (Virtex-7 FPGA).
-- Stream RISC-V instruction data to a serial terminal over UART
+- Stream RISC-V instruction data to a serial terminal over UART.
 
 ---
 
 ## Data Collection Contents 📦
 
 ### /sw
-- MicroBlaze
+- src
      - ***main.c*** : Main C code that runs on the MicroBlaze
      - ***platform.c***  : Platform-specific functions
      - ***platform.h***  : Platform-specific header file
