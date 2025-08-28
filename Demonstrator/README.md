@@ -11,6 +11,7 @@ It features:
 <p align="center">
   <img src="../assets/demonstrator_setup.PNG" alt="Demonstrator setup" width="1000"/>
 </p>
+
 ---
 
 ## Demonstrator Contents 📦
