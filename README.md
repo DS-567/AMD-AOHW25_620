@@ -76,11 +76,29 @@ A full ML workflow was developed from scratch in the PhD:
 
 ## 3. FPGA Implementation 💻
 
-Some text here...
+The smart watchdog has three main components: ***Control FSM***, ***feature extraction layer*** and the ***SNN***. It is instantiated beside a RISC-V CPU [(Neorv32)](https://github.com/stnolting/neorv32) and monitors control flow in real time.
+
+- During execution, RISC-V instruction data is written to a FIFO buffer
+- The Control FSM reads data from the FIFO to the feature layer
+- 16 binary features are extracted from each instruction, which are passed to the SNN as input data
+- The SNN classifies the instruction as either normal execution or a control flow error
+- This process repeats until there all instructions have been classified (i.e. FIFO is empty)
+
+Full details of the smart watchdog implementation can be found here: [Smart Watchdog Implementation](/add_link_to_directory../)
+
+<p align="center">
+  <img src="assets/smart_watchdog_implementation.PNG" alt="Smart Watchdog Implementation" width="450"/>
+</p>
+
+✔️ The smart watchdog doesn't require any hardware modifications when compiling different C code on Neorv32
+
+✔️ The smart watchdog can detect faults that the RISC-V architecture fails to (no exception / trap).
 
 ---
 
 ## 4. Builds 🚀
+
+To demonstrate the smart watchdog 
 
 1. Smart Watchdog Demonstrator
 
