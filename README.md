@@ -111,7 +111,7 @@ A demonstrator was created and presented at ISCAS 2025, which deployed the devel
   <img src="assets/hardware_setup.PNG" alt="Physical hardware Setup" width="450"/>
 </p>
 
-Build instructions to re-produce the design can be found here: [Demonstrator](/Demonstrator)
+[Build instructions](/Demonstrator)
 
 An additional detailed video of the demonstrator can be found: [Demonstrator Video](https://youtu.be/D4o1u4qUvNw)
 
@@ -119,7 +119,7 @@ An additional detailed video of the demonstrator can be found: [Demonstrator Vid
 
 To train any neural network, good training data is required. A custom hardware architecture was created with AMD FPGAs in this PhD to collect data from a real-world RISC-V softcore (Neorv32), facilitating fault injection and data extraction off-chip.
 
-Build instructions to re-produce the design can be found here: [Data Collection](/Data_Collection)
+[Build instructions](/Data_Collection)
 
 ---
 
