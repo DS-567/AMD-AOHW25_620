@@ -60,7 +60,7 @@ com port driver check?
 Once the COM port appears as shown below, move to step 3.
 
 <p align="center">
-  <img src="../assets/com_port.PNG" alt="Com Port" width="300"/>
+  <img src="../assets/com_port.png" alt="Com Port" width="300"/>
 </p>
 
 **Step 3** - Open a serial terminal. This design has been used successfuly with CoolTerm (however other equivalent terminals should work). Setup the serial port to the following: 
