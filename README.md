@@ -13,7 +13,7 @@ This project explored a brain-inspired SNN-based ***smart watchdog***, capable o
 Conceptually, a SNN can be trained to distinguish between normal execution and control-flow errors at instruction level in a RISC-V CPU by monitoring key registers or logic signals. The SNNs decisions are represented with output spikes which can be decoded to determine the inference result.
 
 <p align="center">
-  <img src="assets/smart_watchdog_concept.PNG" alt="Smart Watchdog" width="400"/>
+  <img src="assets/smart_watchdog_concept.PNG" alt="Smart Watchdog Concept" width="400"/>
 </p>
 
 ---
@@ -61,6 +61,10 @@ Conceptually, a SNN can be trained to distinguish between normal execution and c
 ## 2. Methodology ⚙️
 
 Some text here...
+
+<p align="center">
+  <img src="assets/methodology.PNG" alt="Methodology" width="400"/>
+</p>
 
 ---
 
