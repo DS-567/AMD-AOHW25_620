@@ -343,6 +343,7 @@ fractional_str = convert_fractional_part(threshold, num_fractional_bits)
 
 # join whole and fractional binary strings
 # (don't need to add an extra zero at front of threshold string this time!)
+# assumes a positive threshold!
 converted_str = whole_str + fractional_str
 
 # threshold text file write path
