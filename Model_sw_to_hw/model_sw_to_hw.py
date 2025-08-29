@@ -11,11 +11,22 @@
 #   neuron weights
 
 ########################################################################################################################################################
+### LIBRARY IMPORTS ###
+
+import math
+from pathlib import Path
+import torch
+import torch.nn as nn
+import snntorch as snn
+import os
+import shutil
+
+########################################################################################################################################################
 ### USER INPUT PARAMETERS ###
 
 # directory of script
 BASE_DIR = Path(__file__).resolve().parent
-MODEL_DIR  = BASE_DIR / "smart_watchdog_snn_model.pth"
+MODEL_LOAD_PATH  = BASE_DIR / "smart_watchdog_snn_model.pth"
 
 # number of bits for whole and fractional part of the 24-bit data width of developed SNN
 num_whole_bits = 10
@@ -39,17 +50,6 @@ threshold = 2
 
 # LIF reset mechanism
 reset_mechanism = 'subtract'
-
-########################################################################################################################################################
-### LIBRARY IMPORTS ###
-
-import math
-from pathlib import Path
-import torch
-import torch.nn as nn
-import snntorch as snn
-import os
-import shutil
 
 ########################################################################################################################################################
 ### FUNCTION DECLARATIONS ###
@@ -276,7 +276,7 @@ device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cp
 net = Net().to(device)
 
 # load model parameters
-net.load_state_dict(torch.load(model_load_path + ".pth"))
+net.load_state_dict(torch.load(MODEL_LOAD_PATH))
 
 # get hidden and output layer biases and weights as lists
 hidden_biases_list = net.fc_hid.bias.tolist()
@@ -341,7 +341,7 @@ fractional_str = convert_fractional_part(threshold, num_fractional_bits)
 converted_str = whole_str + fractional_str
 
 # threshold text file write path
-file_path = top_write_path + "/" + "threshold.txt"
+file_path = top_write_path / "threshold.txt"
 
 # write threshold to text file
 write_single_parameter_to_file(file_path, converted_str)
@@ -355,7 +355,7 @@ write_single_parameter_to_file(file_path, converted_str)
 file_path_extension = "layer 1 biases"
 
 # create folder at file path extension
-directory_temp = top_write_path + "/" + file_path_extension
+directory_temp = top_write_path / file_path_extension
 if not os.path.exists(directory_temp):
     os.makedirs(directory_temp)
 
@@ -383,8 +383,10 @@ for i in range(len(hidden_biases_list)):
     if (sign_MSB == '1'):
         converted_str = twos_complement_fixed_point(converted_str)
 
+    str_index = "neuron " + str(i) + ".txt"
+
     # neuron bias text file write path
-    file_path = top_write_path + "/" + file_path_extension + "/" + "neuron " + str(i) + ".txt"
+    file_path = top_write_path / file_path_extension / str_index
 
     # write neuron bias to text file
     write_single_parameter_to_file(file_path, converted_str)
@@ -396,7 +398,7 @@ for i in range(len(hidden_biases_list)):
 file_path_extension = "layer 2 biases"
 
 # create folder at file path extension
-directory_temp = top_write_path + "/" + file_path_extension
+directory_temp = top_write_path / file_path_extension
 if not os.path.exists(directory_temp):
     os.makedirs(directory_temp)
 
@@ -424,8 +426,10 @@ for i in range(len(output_biases_list)):
     if (sign_MSB == '1'):
         converted_str = twos_complement_fixed_point(converted_str)
 
+    str_index = "neuron " + str(i) + ".txt"
+
     # neuron bias text file write path
-    file_path = top_write_path + "/" + file_path_extension + "/" + "neuron " + str(i) + ".txt"
+    file_path = top_write_path / file_path_extension / str_index
 
     # write neuron bias to text file
     write_single_parameter_to_file(file_path, converted_str)
@@ -439,7 +443,7 @@ for i in range(len(output_biases_list)):
 file_path_extension = "layer 1 weights"
 
 # create folder at file path extension
-directory_temp = top_write_path + "/" + file_path_extension
+directory_temp = top_write_path / file_path_extension
 if not os.path.exists(directory_temp):
     os.makedirs(directory_temp)
 
@@ -470,9 +474,11 @@ for i in range(len(hidden_weights_list)):
 
         # append to buffer list
         converted_parameter_buffer.append(converted_str)
+    
+    str_index = "neuron " + str(i) + ".txt"
 
     # hidden neuron weight text file write path
-    file_path = top_write_path + "/" + file_path_extension + "/" + "neuron " + str(i) + ".txt"
+    file_path = top_write_path / file_path_extension / str_index
 
     # write hidden neuron weight list to text file
     write_parameter_list_to_file(file_path, converted_parameter_buffer)
@@ -487,7 +493,7 @@ for i in range(len(hidden_weights_list)):
 file_path_extension = "layer 2 weights"
 
 # create folder at file path extension
-directory_temp = top_write_path + "/" + file_path_extension
+directory_temp = top_write_path / file_path_extension
 if not os.path.exists(directory_temp):
     os.makedirs(directory_temp)
 
@@ -519,8 +525,10 @@ for i in range(len(output_weights_list)):
         # append to buffer list
         converted_parameter_buffer.append(converted_str)
 
+    str_index = "neuron " + str(i) + ".txt"
+
     # output neuron weight text file write path
-    file_path = top_write_path + "/" + file_path_extension + "/" + "neuron " + str(i) + ".txt"
+    file_path = top_write_path / file_path_extension / str_index
 
     # write output neuron weight list to text file
     write_parameter_list_to_file(file_path, converted_parameter_buffer)
@@ -532,4 +540,5 @@ for i in range(len(output_weights_list)):
 ### SCRIPT DONE ###
 
 # print
+print("")
 print("Model setup text files generated!")
