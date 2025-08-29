@@ -1,2 +1,3 @@
-torch==1.11.0+cpu
+torch==1.11.0
+
 snntorch==0.7.0
