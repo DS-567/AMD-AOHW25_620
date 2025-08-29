@@ -9,7 +9,7 @@ This repository contains the SNN software model of the smart watchdog, including
 ### Short Decription
 
 - The SNN VHDL design included in this submission repo is designed to use text files to initialise parameters such as weights, biases and thresholds.
-- This Python script loads the SNN model included in this directory, and creates text files for Vivado to use.
+- This Python script loads the SNN model included in this directory, and creates text files for Vivado to build from.
 
 ---
 
