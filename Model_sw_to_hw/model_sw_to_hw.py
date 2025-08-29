@@ -32,7 +32,7 @@ MODEL_LOAD_PATH  = BASE_DIR / "smart_watchdog_snn_model.pth"
 SNN_JSON_DIR  = BASE_DIR / "SNN_config.json"
 
 # Load config.json
-with open(UART_DIR) as f:
+with open(SNN_JSON_DIR) as f:
     config = json.load(f)
 
 num_whole_bits = config["num_whole_bits"]
@@ -48,9 +48,9 @@ reset_mechanism = config["reset_mechanism"]
 
 bias_text = config["bias"]
 
-if (bias_text == "enabled):
+if (bias_text == "enabled"):
     bias = True
-elif (bias_text == "disabled):
+elif (bias_text == "disabled"):
     bias = False
 else:
     print("Incorrect bias parameter - must be either enabled or disabled!")
