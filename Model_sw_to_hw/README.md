@@ -16,7 +16,8 @@ This repository contains the SNN software model of the smart watchdog, including
 ## Model_sw_to_hw Contents 📦
 
 - ***smart_watchdog_snn_model.pth*** : Path of SNNTorch software model
-- ***model_sw_to_hw.py*** : Main Python script
+- ***model_sw_to_hw_SNN.py*** : Python script for time-mux SNN
+- ***model_sw_to_hw_SNN.py*** : Python script for Fast SNN
 - ***requirements.txt***  : Python dependencies
 - ***SNN_config.json***  : SNN network configuration
 
@@ -54,12 +55,26 @@ and navigate to folder:
 
 **Step 6** - Run the script:
 
-`python model_sw_to_hw.py`
+⚠️ Note, there are two SNN implementations versions in this repo (SNN and Fast SNN), as described in the report. Run the following command beside on the SNN implementation.
+
+**SNN (time-mux)**
+
+`python model_sw_to_hw_SNN.py`
 
 The script should print: `"Model setup text files generated!"`
+(SNN)
+
+✅ A folder named `setup text files` will now have been created inside the current directory (`/AMD-AOHW25_620/Model_sw_to_hw/`). You can see the parameters stored as 24 bit with a sign bit for each LIF neuron.
+
+**Fast SNN (adder trees)**
+
+`python model_sw_to_hw_Fast_SNN.py`
+
+The script should print: `"Model setup text files generated!"`
+(Fast SNN)
+
+✅ A folder named `setup text files` will now have been created inside the current directory (`/AMD-AOHW25_620/Model_sw_to_hw/`). You can see the parameters stored as 24 bit two's complement for each LIF neuron.
 
 ---
-
-✅ A folder named `setup text files` will now have been created inside the current directory (`/AMD-AOHW25_620/Model_sw_to_hw/`). You can see the parameters stored as 24-bit twos complement for each LIF neuron.
 
 Using the file path of this folder `setup text files` when instantiating the smart watchdog in Vivado will synthesize the SNN with the parameters from the SNNTorch model and should be applicable with most SNNTorch models with minor modifications.
