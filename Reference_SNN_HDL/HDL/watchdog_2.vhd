@@ -112,6 +112,8 @@ port map (clk_i     => clk_i,
          );
          
 SNN_done_o <= SNN_done;
+
+--- Needs fixed for full generic-ness!
 SNN_class_zero_o <= SNN_classes(0);
 SNN_class_one_o <= SNN_classes(1);
 ---------------------------------------------------------------------------------------------------------------
@@ -308,3 +310,4 @@ watchdog_error_o <= error;
 ----------------------------------------------------------------------------------------------------------------
 
 end Behavioral;
+
