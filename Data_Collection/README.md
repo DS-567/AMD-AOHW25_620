@@ -7,7 +7,19 @@ It features:
 - FPGA backend built using Vitis, running on an AMD VC709 evaluation board (Virtex-7 FPGA).
 - Stream RISC-V instruction data to a serial terminal over UART.
 
-ADD BLOCK DIAGRAM OF ARCHITECTURE?
+<p align="center">
+  <img src="../assets/data_collection_architecture.PNG" alt="Data Collection Architecture.png" width="750"/>
+</p>
+
+### Short Description
+
+- ***Setup registers*** are configured for application paprameters such as run time, fault setups etc.
+- ***Bit fault controllers*** handle injecting faults that are configured via the setup registers.
+- ***FIFO and register*** stores RISC-V instruction data during each C application run.
+- ***Result data memory*** stores the result of the C application running on the RISC-V, e.g. heap sort.
+- ***Control FSMs*** orchestrates the hardware design, e.g. resetting the RISC-V, enabling data storage.
+- These components are placed in an IP (***nv32_ip1***) with an AXI interface.
+- A ***MicroBlaze CPU*** handles the serial communication between the RTL IP (nv32_ip1) and the terminal.  
 
 ---
 
@@ -127,24 +139,24 @@ and **Click Finish**.
 
 **Step 1** - Enter the following commands to setup the time to run the RISC-V application for (the bare minimum command necessary):
 
-- 1. Enter `1` followed by the `Enter` key.
-- 2. Enter `14` followed by the `Enter` key.
-- 3. Enter `10,000` followed by the `Enter` key.
-- 4. And return home by pressing the `m` key followed by the `Enter` key.
-- 5. Then enter `7` followed by the `Enter` key.
+1. Enter `1` followed by the `Enter` key.
+2. Enter `14` followed by the `Enter` key.
+3. Enter `10,000` followed by the `Enter` key.
+4. And return home by pressing the `m` key followed by the `Enter` key.
+5. Then enter `7` followed by the `Enter` key.
  
 **Step 2** - The design is now ready to run the RISC-V C application for 10,000 clock cycles. The data that is about to be streamed needs to be saved:
 
-- 1. On CoolTerm, press the ***clear data*** icon - clearing the terminal window.
-- 2. Press `ctrl` + `r` and save the text file locally.
-- 3. Enter `1` followed by the `Enter' key - and the RISC-V instruction data should begin streaming off-FPGA to the text file.
+1. On CoolTerm, press the ***clear data*** icon - clearing the terminal window.
+2. Press `ctrl` + `r` and save the text file locally.
+3. Enter `1` followed by the `Enter` key - and the RISC-V instruction data should begin streaming off-FPGA to the text file.
  
 UART is a slow protocol and this will take a few minutes. Grab a coffee ;)
 
 **Step 3** - After 10,000 clock cycles of RISC-V instruction data is streamed, close the text file:
 
-- 1. Press `ctrl` + `shift` + `r` to save the text file locally.
-- 2. And return home by pressing the `m` key followed by `Enter`.
+- Press `ctrl` + `shift` + `r` to save the text file locally.
+- And return home by pressing the `m` key followed by `Enter`.
 
 ---
 
