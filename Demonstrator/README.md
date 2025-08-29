@@ -19,6 +19,10 @@ It features:
 - The smart watchdog monitors each instruction executed by Neorv32 and classifies accordingly, i.e. normal execution or control flow error detected.
 - Smart watchdog class decisions and other information is extracted off FPGA over UART to a Python GUI for displaying to the user.
 
+<p align="center">
+  <img src="../assets/demonstrator_diagram.png" alt="Demonstrator Diagram" width="530"/>
+</p>
+
 ---
 
 ## Demonstrator Contents 📦
