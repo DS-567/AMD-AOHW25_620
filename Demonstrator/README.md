@@ -1,6 +1,6 @@
 # Demonstrator Overview 🔍 
 
-This repository contains the source code for the Smart Watchdog demonstrator presented at ISCAS 2025 and submitted to the [AMD Open Hardware Design Competition 2025].
+This repository contains the source code for the Smart Watchdog demonstrator presented at ISCAS 2025 and submitted to the AMD Open Hardware Design Competition 2025.
 
 It features:
 - A physical hardare setup (left) i.e motor, encoder, custom PCBs.
