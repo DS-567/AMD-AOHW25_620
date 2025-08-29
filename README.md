@@ -130,6 +130,10 @@ To train any neural network, high quality training data is required. A custom ha
 
 Implementing a trained model on FPGA can require some consideration. The simple framework of extracting key parameters from a SNN model to then be implemented in Vivado is shared.
 
+<p align="center">
+  <img src="/assets/software_model_to_hardware_framework.PNG" alt="Software Model to Hardware Framework" width="800"/>
+</p>
+
 [Click here for build instructions](/Model_sw_to_hw)
 
 ---
