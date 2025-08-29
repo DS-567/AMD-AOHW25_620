@@ -17,7 +17,7 @@ This repository contains the SNN software model of the smart watchdog, including
 
 - ***smart_watchdog_snn_model.pth*** : Path of SNNTorch software model
 - ***model_sw_to_hw_SNN.py*** : Python script for time-mux SNN
-- ***model_sw_to_hw_SNN.py*** : Python script for Fast SNN
+- ***model_sw_to_hw_Fast_SNN.py*** : Python script for Fast SNN
 - ***requirements.txt***  : Python dependencies
 - ***SNN_config.json***  : SNN network configuration
 
