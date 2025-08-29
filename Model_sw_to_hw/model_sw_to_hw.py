@@ -21,6 +21,7 @@ import snntorch as snn
 import os
 import shutil
 import sys
+import json
 
 ########################################################################################################################################################
 ### SNN JSON PARAMETERS ###
