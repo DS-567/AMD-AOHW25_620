@@ -547,3 +547,4 @@ for i in range(len(output_weights_list)):
 # print
 print("")
 print("Model setup text files generated!")
+print("(Fast SNN)")
