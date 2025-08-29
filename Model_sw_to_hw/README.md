@@ -57,21 +57,23 @@ and navigate to folder:
 
 ⚠️ Note, there are two SNN implementations versions in this repo (SNN and Fast SNN), as described in the report. Run the following command beside on the SNN implementation.
 
-**SNN (time-mux)**
+### SNN (time-mux)
 
 `python model_sw_to_hw_SNN.py`
 
 The script should print: `"Model setup text files generated!"`
-(SNN)
+
+`(SNN)`
 
 ✅ A folder named `setup text files` will now have been created inside the current directory (`/AMD-AOHW25_620/Model_sw_to_hw/`). You can see the parameters stored as 24 bit with a sign bit for each LIF neuron.
 
-**Fast SNN (adder trees)**
+### Fast SNN (adder trees)
 
 `python model_sw_to_hw_Fast_SNN.py`
 
 The script should print: `"Model setup text files generated!"`
-(Fast SNN)
+
+`(Fast SNN)`
 
 ✅ A folder named `setup text files` will now have been created inside the current directory (`/AMD-AOHW25_620/Model_sw_to_hw/`). You can see the parameters stored as 24 bit two's complement for each LIF neuron.
 
