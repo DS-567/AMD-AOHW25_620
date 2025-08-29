@@ -321,7 +321,7 @@ fractional_str = convert_fractional_part(threshold, num_fractional_bits)
 converted_str = '0' + whole_str + fractional_str
 
 # threshold text file write path
-file_path = top_write_path + "/" + "threshold.txt"
+file_path = top_write_path / "threshold.txt"
 
 # write threshold to text file
 write_single_parameter_to_file(file_path, converted_str)
