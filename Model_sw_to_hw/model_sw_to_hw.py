@@ -27,6 +27,15 @@ import shutil
 # directory of script
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_LOAD_PATH  = BASE_DIR / "smart_watchdog_snn_model.pth"
+SNN_JSON_DIR  = BASE_DIR / "SNN_config.json"
+
+# Load config.json
+with open(UART_DIR) as f:
+    config = json.load(f)
+
+    uart_port = config["uart_port"]
+    baud_rate = config["baud_rate"]
+    timeout = config["timeout"]
 
 # number of bits for whole and fractional part of the 24-bit data width of developed SNN
 num_whole_bits = 10
