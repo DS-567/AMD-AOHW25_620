@@ -1,6 +1,6 @@
 # Data Collection Overview 🔍
 
-This repository contains the source code for the collection framework developed during the PhD project to collect RISC-V instruction data train the SNN of the smart watchdog, which is also submitted to the [AMD Open Hardware Design Competition 2025].
+This repository contains the source code for the collection framework developed during the PhD project to collect RISC-V instruction data train the SNN of the smart watchdog, which is also submitted to the AMD Open Hardware Design Competition 2025.
 
 It features:
 - Design bitstream generated from Vivado.
