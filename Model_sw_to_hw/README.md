@@ -25,14 +25,14 @@ It features:
 
 ---
 
-## Demonstrator Contents 📦
+## Model_sw_to_hw Contents 📦
 
-### /sw
-- Python GUI
-     - ***ISCAS_demo_gui.py*** : Main Python GUI script
-     - ***requirements.txt***  : Python dependencies
+- ***images/*** : Images for GUI
+
+- ***model_sw_to_hw.py*** : Main Python script
+- ***requirements.txt***  : Python dependencies
+     
      - ***uart_config.json***  : UART configuration
-     - ***images/*** : Images for GUI
 
 - MicroBlaze
      - ***main.c*** : Main C code that runs on the MicroBlaze
