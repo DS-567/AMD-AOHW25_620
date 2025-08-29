@@ -26,9 +26,7 @@ It features:
 - ***smart_watchdog_snn_model.pth*** : Path of SNNTorch software model
 - ***model_sw_to_hw.py*** : Main Python script
 - ***requirements.txt***  : Python dependencies
-- ***SNN_config.json***  : UART configuration
-
-**Note:** More information on the custom PCBs can be found: [`AMD-AOHW25_620/Demonstrator/hw/PCBs/`](/Demonstrator/hw/PCBs/).
+- ***SNN_config.json***  : SNN network configuration
 
 ---
 
@@ -42,8 +40,6 @@ It features:
 
 The following stages must be performed in order.
 
- ## 1. Python GUI Build 📺
-
 **Step 1** - Download the repo zip file (if not already done so).
 
 **Step 2** - Open the Windows terminal:
@@ -52,7 +48,7 @@ The following stages must be performed in order.
 
 and navigate to folder:
 
-`/AMD-AOHW25_620/Demonstrator/sw/Python_GUI`
+`/AMD-AOHW25_620/Model_sw_to_hw/`
 
 **Step 3** - Create and activate a virtual environment (windows):
          
@@ -60,22 +56,20 @@ and navigate to folder:
 
 `venv\Scripts\activate`
 
-
 **Step 4** - Install dependencies:
 
 `pip install -r requirements.txt`
 
-**Step 5** - Plug in the Nexys A7-100T FPGA board. Find the COM port in Device Manager and update `uart_config.json,` e.g.
-
-`"COM1"`.
-
 **Step 6** - Run the script:
 
-`python ISCAS_demo_gui.py`
+`python model_sw_to_hw.py`
 
-A blank GUI should pop-up.
+The script should print: `""`
 
 ---
+
+A folder named `setup text files` should be created inside the current directory (`/AMD-AOHW25_620/Model_sw_to_hw/`).
+
 
  ## 2. FPGA Build (Vitis IDE) 🖥️
 
