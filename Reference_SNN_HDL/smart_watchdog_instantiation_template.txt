@@ -1,0 +1,34 @@
+
+
+
+
+--- smart watchdog component instantiation template  ----------------------------------------------------------
+watchdog_2_inst : watchdog_2
+generic map (g_num_features => g_num_features,
+             g_SNN_layer_sizes => g_SNN_layer_sizes,
+             g_num_timesteps   => g_num_timesteps, 
+             g_num_beta_shifts => g_num_beta_shifts,
+             g_setup_file_path => g_setup_file_path)
+port map (clk_i  => ,
+          rstn_i => ,
+          trigger_pulse_i => ,
+          fifo_empty_i    => ,
+          fifo_rd_valid_i => ,
+          fifo_data_i  => ,
+          fifo_rd_en_o => ,
+          SNN_done_o   => ,
+          SNN_class_zero_o => ,
+          SNN_class_one_o  => ,
+          watchdog_error_o => ,
+         );
+---------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
