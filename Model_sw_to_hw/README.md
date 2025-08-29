@@ -62,4 +62,4 @@ The script should print: `"Model setup text files generated!"`
 
 ✅ A folder named `setup text files` will now have been created inside the current directory (`/AMD-AOHW25_620/Model_sw_to_hw/`). You can see the parameters stored as 24-bit twos complement for each LIF neuron.
 
-Using the file path of this folder `setup text files` when instantiating the smart watchdog in Vivado will synthesize the SNN with the parameters from the SNNTorch model.
+Using the file path of this folder `setup text files` when instantiating the smart watchdog in Vivado will synthesize the SNN with the parameters from the SNNTorch model and should be applicable with most SNNTorch models with minor modifications.
