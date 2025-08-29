@@ -14,6 +14,10 @@ Contributions include:
 
 See the [report](/Report.pdf) or [publications](#6-publications-) for more details on the project. 
 
+**2-minute YouTube video:** 
+
+**Additional ??-minute YouTube video:**
+
 ## Project Overview
 
 With the complexity and miniscule feature sizes of modern processor architectures, temporary faults as a result of manufacturing defects and radiation-induced soft errors pose serious reliability concerns for CPUs deployed in safety-critical embedded applications. Fault detection mechanisms are required to monitor and detect faults to ensure hardware integrity. 
