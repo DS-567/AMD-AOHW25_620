@@ -116,7 +116,7 @@ An additional detailed video of the demonstrator can be found: [Demonstrator Vid
 
 ### 2. Data Collection Framework
 
-To train any neural network, good training data is required. A custom hardware architecture was created with AMD FPGAs in this PhD to collect data from a real-world RISC-V softcore (Neorv32), facilitating fault injection and data extraction off-chip.
+To train any neural network, high quality training data is required. A custom hardware architecture was created with AMD FPGAs in this PhD to collect data from a real-world RISC-V softcore (Neorv32), facilitating fault injection and data extraction off-FPGA.
 
 [Build instructions](/Data_Collection)
 
