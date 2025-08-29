@@ -20,9 +20,10 @@ import torch.nn as nn
 import snntorch as snn
 import os
 import shutil
+import sys
 
 ########################################################################################################################################################
-### USER INPUT PARAMETERS ###
+### SNN JSON PARAMETERS ###
 
 # directory of script
 BASE_DIR = Path(__file__).resolve().parent
@@ -33,33 +34,27 @@ SNN_JSON_DIR  = BASE_DIR / "SNN_config.json"
 with open(UART_DIR) as f:
     config = json.load(f)
 
-    uart_port = config["uart_port"]
-    baud_rate = config["baud_rate"]
-    timeout = config["timeout"]
+num_whole_bits = config["num_whole_bits"]
+num_fractional_bits = config["num_fractional_bits"]
 
-# number of bits for whole and fractional part of the 24-bit data width of developed SNN
-num_whole_bits = 10
-num_fractional_bits = 14
+num_inputs = config["num_inputs"]
+num_hidden = config["num_hidden"]
+num_outputs = config["num_outputs"]
 
-# SNN parameters
-num_inputs = 16
-num_hidden = 20
-num_outputs = 2
+beta = config["beta"]
+threshold = config["threshold"]
+reset_mechanism = config["reset_mechanism"]
 
-# LIF neuron parameters
+bias_text = config["bias"]
 
-# enable / disable bias
-bias = True
-
-# LIF beta
-beta = 0.75
-
-# LIF threshold
-threshold = 2
-
-# LIF reset mechanism
-reset_mechanism = 'subtract'
-
+if (bias_text == "enabled):
+    bias = True
+elif (bias_text == "disabled):
+    bias = False
+else:
+    print("Incorrect bias parameter - must be either enabled or disabled!")
+    sys.exit(0)
+    
 ########################################################################################################################################################
 ### FUNCTION DECLARATIONS ###
 
