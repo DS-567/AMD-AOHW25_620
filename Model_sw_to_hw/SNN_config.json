@@ -1,0 +1,12 @@
+{
+  "num_whole_bits"      : 10,
+  "num_fractional_bits" : 14,
+
+  "num_inputs"          : 16,
+  "num_hidden"          : 20,
+  "num_outputs"         : 2,
+  "bias"                : enabled,
+  "beta"                : 0.75,
+  "threshold"           : 2,
+  "reset_mechanism"     : "subtract"
+}
