@@ -19,7 +19,8 @@ It features:
 - ***Result data memory*** stores the result of the C application running on the RISC-V, e.g. heap sort.
 - ***Control FSMs*** orchestrates the hardware design, e.g. resetting the RISC-V, enabling data storage.
 - These components are placed in an IP (***nv32_ip1***) with an AXI interface.
-- A ***MicroBlaze CPU*** handles the UART communication between the RTL IP (nv32_ip1) and the terminal.  
+- A ***MicroBlaze CPU*** handles the UART communication between the RTL IP (nv32_ip1) and the terminal.
+- ***Reset button*** is the centre button on the board.
 
 ---
 
