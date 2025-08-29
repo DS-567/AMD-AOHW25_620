@@ -108,7 +108,7 @@ Full details of the smart watchdog implementation can be seen in the [report](/R
 
 There are 2 source codes provided in this repository for building: ***1. A smart watchdog demonstrator*** and the ***2. data collection framework***, as detailed below.
 
-### - Smart Watchdog Demonstrator
+### Smart Watchdog Demonstrator
 
 A demonstrator was created and presented at ISCAS 2025, which deployed the developed smart watchdog on FPGA to monitor the Neorv32 processor executing a motor control task, resembling a safety-critical and realistic workload. Custom PCBs and a Python GUI were created to interface with the demo and to visualise data and performance. Faults can be injected into the RISC-V program counter to realise control flow errors during program execution. The smart watchdog reponse and fault detection capability can be observed in great detail.
 
@@ -120,13 +120,13 @@ A demonstrator was created and presented at ISCAS 2025, which deployed the devel
 
 An additional detailed video of the demonstrator can be found: [Demonstrator Video](https://youtu.be/D4o1u4qUvNw)
 
-### - Data Collection Framework
+### Data Collection Framework
 
 To train any neural network, high quality training data is required. A custom hardware architecture was created with AMD FPGAs in this PhD to collect data from a real-world RISC-V softcore (Neorv32), facilitating fault injection and data extraction off-FPGA.
 
 [Click here for build instructions](/Data_Collection)
 
-### - Software Model to Hardware Framework
+### Software Model to Hardware Framework
 
 Implementing a trained model on FPGA can require some consideration. The simple framework of extracting key parameters from a SNN model to then be implemented in Vivado is shared.
 
