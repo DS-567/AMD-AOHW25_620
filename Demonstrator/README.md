@@ -61,6 +61,8 @@ It features:
 
 **Note:** More information on the custom PCBs can be found: [`AMD-AOHW25_620/Demonstrator/hw/PCBs/`](/Demonstrator/hw/PCBs/).
 
+See the [report](../Report.pdf) for full details on the smart watchdog and Fast SNN implementation.
+
 ---
 
 ## Demonstrator Dependencies 📝
