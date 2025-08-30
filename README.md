@@ -50,7 +50,7 @@ This project developed the first brain-inspired SNN-based ***smart watchdog***, 
 
 ## 1. Motivation 🧠
 
-- A watchdog should provide:
+- A watchdog should introduce:
    -    ***Minimal power and area overheads***
    -    ***Effective fault detection***
    -    ***Robustness to failure***
