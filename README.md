@@ -112,7 +112,7 @@ Full details of the smart watchdog implementation can be seen in the [report](/R
 
 ## 4. Builds 🚀
 
-There are 3 source codes provided in this repository for building: ***1. A smart watchdog demonstrator***, ***2. data collection framework*** AND ***3. framework for converting SNNTorch software models to hardware***, as detailed below.
+There are 3 source codes provided in this repository for building:
 
 ### 1. Smart Watchdog Demonstrator
 
