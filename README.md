@@ -14,9 +14,9 @@ Contributions include:
 
 See the [report](/Report.pdf) or [publications](#6-publications-) for more details on the project. 
 
-**2-minute YouTube video:** 
+**2-minute YouTube video:** https://www.youtube.com/watch?v=dE9iSWt-EiE 
 
-**Additional ??-minute YouTube video:**
+**Additional demonstrator YouTube video:** https://www.youtube.com/watch?v=D4o1u4qUvNw&t=3s
 
 ## Project Overview
 
