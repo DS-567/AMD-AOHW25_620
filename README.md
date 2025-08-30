@@ -73,12 +73,12 @@ This project developed the first brain-inspired SNN-based ***smart watchdog***, 
 ## 2. Methodology ⚙️
 
 A full ML workflow was developed from scratch in the PhD:
-- Custom data collection hardware architecture created to gather training data
-- Custom feature extraction algorithm
-- SNN model trained using SNNTorch (~98% accuracy)
-- Implemented the SNN model in VHDL and instantiated inside the smart watchdog
-- Validated the smart watchdog concept on FPGA (retained ~98% accuracy)
-- Created a final demonstrator of the smart watchdog on FPGA
+- Custom data collection hardware architecture created to gather training data.
+- Custom feature extraction algorithm.
+- SNN model trained using SNNTorch (~98% accuracy).
+- Implemented the SNN model in VHDL and instantiated inside the smart watchdog.
+- Validated the smart watchdog concept on FPGA (retained ~98% accuracy).
+- Created a final demonstrator of the smart watchdog on FPGA.
 
 <p align="center">
   <img src="assets/methodology.PNG" alt="Methodology" width="600"/>
@@ -90,11 +90,11 @@ A full ML workflow was developed from scratch in the PhD:
 
 The smart watchdog has three main components: ***Control FSM***, ***feature extraction layer*** and the ***SNN***. It is instantiated beside a RISC-V CPU [(Neorv32)](https://github.com/stnolting/neorv32) and monitors control flow in real time.
 
-- During execution, RISC-V instruction data is written to a FIFO buffer
-- The Control FSM reads data from the FIFO to the feature layer
-- 16 binary features are extracted from each instruction, which are passed to the SNN as input data
-- The SNN classifies the instruction as either normal execution or a control flow error
-- This process repeats until there all instructions have been classified (i.e. FIFO is empty)
+- During execution, RISC-V instruction data is written to a FIFO buffer.
+- The Control FSM reads data from the FIFO to the feature layer.
+- 16 binary features are extracted from each instruction, which are passed to the SNN as input data.
+- The SNN classifies the instruction as either normal execution or a control flow error.
+- This process repeats until there all instructions have been classified (i.e. FIFO is empty).
 
 Full details of the smart watchdog implementation can be seen in the [report](/Report.pdf). 
 
