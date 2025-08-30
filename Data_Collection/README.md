@@ -173,9 +173,11 @@ Open the text file that was just created. This is the RISC-V instruction data fr
 
 - The `CPU_state= SLEEP` is the `main()` returning 0 after the heap sort completed, and this takes almost 10,000 cycles.
 
-Faults can be injected to capture data to see how the core behaves. This was the data collection framework that collected data to train the SNN model in this PhD! In Auto mode, lots of data can be gathered in a single text file by repeating the C application on the RISC-V repeately with different faults configured, as opposed to what we demonstrated here in manual mode with just a single application execution.
+Faults can be injected to capture data to see how the core behaves. This was the data collection framework that collected data to train the SNN model in this PhD! 
 
-Replacing the UART with a faster protocol such as ethernet would be beneficial to reduce data collection time.
+The design is intended to be used in a more automatic manner, gathering more in a single text file by repeating the C application on the RISC-V repeately with different faults configured, as opposed to what we demonstrated here manually with just a single application execution.
+
+Also replacing the UART with a faster protocol such as ethernet would be beneficial to reduce data collection time.
 
 
 
