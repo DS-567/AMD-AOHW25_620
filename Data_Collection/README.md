@@ -53,7 +53,9 @@ It features:
 - FPGA platform: **AMD VC709**
 - A serial terminal: E.g. **CoolTerm** (or equivalent)
 
-⚠️ **Note:** This design is hardware-dependent and can only be ran on the AMD VC709 board!  
+⚠️ **Note:** This design is hardware-dependent and must be ran on the AMD VC709 board! 
+
+Constraints file is provided to port to other AMD FPGAs.
 
 ---
 
