@@ -5,3 +5,11 @@ The fault setup and fault injection control circuits allows users to both setup 
 The smart watchdog monitoring circuit showcases the smart watchdogs response on RISC-V control flow to users, with a green and red LED indicating the status, e.g. no faults detected (green) or fault detected (red). The smart watchdog can be disabled with a switch and the RISC-V can also be reset with another switch. In the case of the trap being triggered after faults are injected, a trap triggered LED indicates this scenario.
 
 The buttons and switches are read by the FPGA using 2 parallel to serial shift registers (74HC165s) and the LEDs are driven by the FPGA using 6 serial to parallel shift registers (74AHCT595s).
+
+<p align="center">
+  <img src="../assets/fault_injection_and_smart_watchdog_monitoring_pcb_3D.PNG" alt="Fault Injection and Smart Watchdog Monitoring pcb 3D" width="1000"/>
+</p>
+
+<p align="center">
+  <img src="../assets/fault_injection_and_smart_watchdog_monitoring_pcb.PNG" alt="Fault Injection and Smart Watchdog Monitoring pcb" width="1000"/>
+</p>
