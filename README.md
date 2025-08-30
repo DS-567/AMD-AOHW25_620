@@ -6,11 +6,11 @@ Team number: **AOHW25_620**
 
 Contributions include:
 
-🏅 **Smart watchdog demonstrator**
+🏅 **Smart watchdog demonstrator**.
 
-🏅 **Data collection framework**
+🏅 **Data collection framework**.
 
-🏅 **Software model to hardware framework**
+🏅 **Software model to hardware framework**.
 
 See the [report](/Report.pdf) or [publications](#6-publications-) for more details on the project. 
 
