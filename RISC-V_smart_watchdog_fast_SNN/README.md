@@ -64,20 +64,24 @@ Steps must be performed in order.
 
  ### Smart Watchdog Operation 🕵🏻
 
- **Step 1** - Manually setup the trigger probe:
+**Step 1** - Manually setup the trigger probe:
 
       - `+` and select `start_pulse`.
       - Then select the trigger type as `R` for rising edge `R (0 to 1 transition)`.
 
- **Step 2** - Set the trigger position in waveform to `0`.
+**Step 2** - Set the trigger position in waveform to `0`.
 
- **Step 3** - In the TCL console, enter the following command:
+**Step 3** - Manually make the waveform the full size of the screen,
+
+and remove all the current waveform signals by highlightig them and pressing `-`.
+
+**Step 4** - In the TCL console, enter the following command:
 
 `source wave_setup.tcl`
 
 Manually change the features radix to `binary`.
 
- **Step 4** - Press the bottom button on the FPGA board to initiate the hardware:
+ **Step 5** - Arm the ILA core by pressing `>` Press the bottom button on the FPGA board to initiate the hardware:
 
  <p align="center">
   <img src="../assets/VC709_trigger_button.png" alt="VC709 Trigger Button" width="380"/>
