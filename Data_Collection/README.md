@@ -251,10 +251,7 @@ The auto fault injection mode allows up to 10 fault (type and start time) to be 
 
 Select how many of the above 10 faults type to inject.
 
-**8** - 
-
-`int int auto_start_bit = 1;`
-`int auto_end_bit = 10; = 10;`
+**8** - `int int auto_start_bit = 1;` `int auto_end_bit = 10; = 10;`
 
 Finally the order and targeted bits of the PC can be set.
 
