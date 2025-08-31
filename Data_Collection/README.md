@@ -181,7 +181,14 @@ Also replacing the UART with a faster protocol such as ethernet would be benefic
 
 ---
 
- ## Setup Registers Overview 🔧
+ ## Fault Injection 🔧
+
+The table below shows the setup registers for setting up and injecting faults into Neorv32. The 64 registers are written to and read from by the MicroBlaze CPU at a higher abtraction using the register index and a constant array of main.c [lines -].
+depending on two scenarios:
+
+**1** - Manually using the 
+
+### Setup registers table:
  
 | Setup Register | Register Width | Register Index |
 |:-----------------------|:----:|:----:|
