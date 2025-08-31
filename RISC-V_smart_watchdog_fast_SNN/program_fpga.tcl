@@ -8,17 +8,16 @@ open_hw_manager
 connect_hw_server
 open_hw_target
 
-# select the first FPGA 
-set my_device [lindex [get_hw_devices] 0]
-current_hw_device $my_device
-refresh_hw_device $my_device
+current_hw_device [get_hw_devices xc7vx690t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx690t_0] 0]
+set_property PROGRAM.FILE $bit_path [get_hw_devices xc7vx690t_0]
+set_property PROBES.FILE $ila_path [get_hw_devices xc7vx690t_0]
+program_hw_devices [get_hw_devices xc7vx690t_0]
+refresh_hw_device [get_hw_devices xc7vx690t_0]
 
-# program FPGA with compressed bitstream
-set_property PROGRAM.FILE $bit_path $my_device
-set_property PROBES.FILE $ila_path $my_device
-program_hw_devices $my_device
-
-# refresh FPGA
-refresh_hw_device $my_device
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"u_ila_0"}]]
 
 puts "FPGA programmed :)"
+
+
+
