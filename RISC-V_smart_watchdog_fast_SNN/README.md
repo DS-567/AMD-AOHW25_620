@@ -11,6 +11,7 @@ It features:
 - The FPGA can be easily programmed using the Vivado design files through the hardware manager.
 - The feature extraction process can be seen along with the SNN spiking activity.
 - Smart watchdog class decisions can be observed after each instruction of a Fibonacci Series C application.
+- Running hardware performance counters track the number of monitored instructions.
 
 ---
 
