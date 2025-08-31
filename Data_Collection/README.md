@@ -189,7 +189,9 @@ To collect larger datasets automatically, there are variables MicroBlaze main.c 
  
 **1** - `int application_run_num = 4;`
 
-This must be set according to the appliation running on Neorv32, as it defines the size of result data memory to extract from Neorv32 data memory (DMEM) after the software application.
+This must be set according to the appliation running on Neorv32, as it defines the size of result data memory to extract from Neorv32 data memory (DMEM) after the software application. Custom applications can be added by modifying the MiroBlaze main.c code.
+
+`Application: 0 = Fibonacci Series | 1 = Bubble Sort | 2 = Matrix Multiplication | 3 =  Heap Sort`
 
 **Note**, this parameter also needs to be set in the VHDL cource code and requires the bitstream to be re-generated after compiling new Neorv32 software (Vivado can be provided on request)!
 
