@@ -33,7 +33,7 @@ This repository contains the SNN software model of the smart watchdog, including
 
 The following stages must be performed in order.
 
-**Step 1** - Download the repo zip file (if not already done so).
+**Step 1** - Download the repo zip file (if not already done so) and unzip.
 
 **Step 2** - Open the Windows terminal:
 
