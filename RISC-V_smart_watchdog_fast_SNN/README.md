@@ -70,28 +70,28 @@ Vivado should also automatically select the debug probes file from the same dire
 
  ## Observe Smart Watchdog Operation 🕵🏻
 
- **Step 1** - Under the trigger setup tab on the bottom right:
+ **Step 1** - Enter the following commands into the TCL console:
+ 
+     `set_property TRIGGER_CONDITION rising_edge [get_hw_probes my_signal]`
+     `set_property C_TRIGGER_POSITION 0 [get_hw_ilas hw_ila_1]`
+     `waveform zoomfull`
+     `add_wave [get_hw_probes {neorv32_reset}]`
+     `add_wave [get_hw_probes {watchdog_2_inst/S_Current_State}]`     
+     `add_wave [get_hw_probes {fifo_empty}]`     
+     `add_wave [get_hw_probes {fifo_rd_en}]`     
+     `add_wave [get_hw_probes {fifo_rd_valid}]`  
+     `add_wave [get_hw_probes {watchdog_2_inst/features}]`  
+     `add_wave [get_hw_probes {watchdog_2_inst/SNN_ready}]`  
+     `add_wave [get_hw_probes {watchdog_2_inst/SNN_trigger}]` 
+     `add_wave [get_hw_probes {watchdog_2_inst/fast_SNN_inst/timestep_counter_reg}]` 
+     `add_wave [get_hw_probes {watchdog_2_inst/SNN_done}]`  
+     `add_wave [get_hw_probes {SNN_class_zero}]` 
+     `add_wave [get_hw_probes {SNN_class_one}]` 
+     `run_hw_ila [get_hw_ilas hw_ila_1]`
+ 
+ **Step 2** - Press the bottom button on the FPGA board to initiate the hardware:
 
-     - Click `+` to add a trigger probe.
-     - Find and select 'start_pulse`.
-     - Set the value field to rising edge `R (0 to 1 transition)`.
+ 
 
-**Step 2** - Under the settings tab on the bottom left:
-
-     - Enter '0' for Trigger position in window.
-
-**Step 3** - Maximise the waveform tab to full screen size.
-
-**Step 4** - Add the following signals to the waveform window in order:
-
-     `neorv32_reset`
-     `watchdog_current_state`
-     `fifo_empty`
-     `fifo_rd_en`
-     `fifo_rd_valid`
-     `features` (select binary as radix)
-     `SNN_ready`
-     `SNN_trigger`
-     `SNN_done`
      
 
