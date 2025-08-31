@@ -183,10 +183,11 @@ Also replacing the UART with a faster protocol such as ethernet would be benefic
 
  ## Fault Injection 🔧
 
-The table below shows the setup registers for setting up and injecting faults into Neorv32. The 64 registers are written to and read from by the MicroBlaze CPU at a higher abtraction using the register index and a constant array of main.c [lines -].
-depending on two scenarios:
+The table below shows the setup registers for setting up and injecting faults into Neorv32. The 64 registers are written to and read from by the MicroBlaze CPU at a higher abtraction using the register index and a constant array of register name strings (look-up table) in the MicroBlaze main.c [lines 16-27].
 
-**1** - Manually using the 
+To collect larger datasets automatically, there are variables MicroBlaze main.c [lines ?-?] that can be pre-configured before programming the FPGA, which are desribed below:
+
+****: 
 
 ### Setup registers table:
  
