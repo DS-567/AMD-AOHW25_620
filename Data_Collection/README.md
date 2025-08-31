@@ -179,5 +179,73 @@ The design is intended to be used in a more automatic manner, gathering more in 
 
 Also replacing the UART with a faster protocol such as ethernet would be beneficial to reduce data collection time.
 
+---
 
-
+ ## Setup Registers Overview 🔧
+ 
+| Setup Register | Register Width | Register Index |
+|:-----------------------|:----:|:----:|
+| `Bit 1 Fault 1 Time Reg` | 16 |  0 |
+| `Bit 1 Fault 2 Time Reg` | 16 |  1 |
+| `Bit 1 Fault 3 Time Reg` | 16 |  2 |
+| `Bit 2 Fault 1 Time Reg` | 16 |  3 |
+| `Bit 2 Fault 2 Time Reg` | 16 |  4 |
+| `Bit 2 Fault 3 Time Reg` | 16 |  5 |
+| `Bit 3 Fault 1 Time Reg` | 16 |  6 |
+| `Bit 3 Fault 2 Time Reg` | 16 |  7 |
+| `Bit 3 Fault 3 Time Reg` | 16 |  8 |
+| `Bit 4 Fault 1 Time Reg` | 16 |  9 |
+| `Bit 4 Fault 2 Time Reg` | 16 |  10 |
+| `Bit 4 Fault 3 Time Reg` | 16 |  11 |
+| `Bit 5 Fault 1 Time Reg` | 16 |  12 |
+| `Bit 5 Fault 2 Time Reg` | 16 |  13 |
+| `Bit 5 Fault 3 Time Reg` | 16 |  14 |
+| `Bit 6 Fault 1 Time Reg` | 16 |  15 |
+| `Bit 6 Fault 2 Time Reg` | 16 |  16 |
+| `Bit 6 Fault 3 Time Reg` | 16 |  17 |
+| `Bit 7 Fault 1 Time Reg` | 16 |  18|
+| `Bit 7 Fault 2 Time Reg` | 16 |  19 |
+| `Bit 7 Fault 3 Time Reg` | 16 |  20 |
+| `Bit 8 Fault 1 Time Reg` | 16 |  21 |
+| `Bit 8 Fault 2 Time Reg` | 16 |  22 |
+| `Bit 8 Fault 3 Time Reg` | 16 |  23 |
+| `Bit 9 Fault 1 Time Reg` | 16 |  24 |
+| `Bit 9 Fault 2 Time Reg` | 16 |  25 |
+| `Bit 9 Fault 3 Time Reg` | 16 |  26 |
+| `Bit 10 Fault 1 Time Reg` | 16 |  27 |
+| `Bit 10 Fault 2 Time Reg` | 16 |  28 |
+| `Bit 10 Fault 3 Time Reg` | 16 |  29 |
+| `Bit 1 Fault 1 Type Reg` | 2 |  30 |
+| `Bit 1 Fault 2 Type Reg` | 2 |  31 |
+| `Bit 1 Fault 3 Type Reg` | 2 |  32 |
+| `Bit 2 Fault 1 Type Reg` | 2 |  33 |
+| `Bit 2 Fault 2 Type Reg` | 2 |  34 |
+| `Bit 2 Fault 3 Type Reg` | 2 |  35 |
+| `Bit 3 Fault 1 Type Reg` | 2 |  36 |
+| `Bit 3 Fault 2 Type Reg` | 2 |  37 |
+| `Bit 3 Fault 3 Type Reg` | 2 |  38 |
+| `Bit 4 Fault 1 Type Reg` | 2 |  39 |
+| `Bit 4 Fault 2 Type Reg` | 2 |  40 |
+| `Bit 4 Fault 3 Type Reg` | 2 |  41 |
+| `Bit 5 Fault 1 Type Reg` | 2 |  42 |
+| `Bit 5 Fault 2 Type Reg` | 2 |  43 |
+| `Bit 5 Fault 3 Type Reg` | 2 |  44 |
+| `Bit 6 Fault 1 Type Reg` | 2 |  45 |
+| `Bit 6 Fault 2 Type Reg` | 2 |  46 |
+| `Bit 6 Fault 3 Type Reg` | 2 |  47 |
+| `Bit 7 Fault 1 Type Reg` | 2 |  48 |
+| `Bit 7 Fault 2 Type Reg` | 2 |  49 |
+| `Bit 7 Fault 3 Type Reg` | 2 |  50 |
+| `Bit 8 Fault 1 Type Reg` | 2 |  51 |
+| `Bit 8 Fault 2 Type Reg` | 2 |  52 |
+| `Bit 8 Fault 3 Type Reg` | 2 |  53 |
+| `Bit 9 Fault 1 Type Reg` | 2 |  54 |
+| `Bit 9 Fault 2 Type Reg` | 2 |  55 |
+| `Bit 9 Fault 3 Type Reg` | 2 |  56 |
+| `Bit 10 Fault 1 Type Reg` | 2 |  57 |
+| `Bit 10 Fault 2 Type Reg` | 2 |  58 |
+| `Bit 10 Fault 3 Type Reg` | 2 |  59 |
+| `Stuck at Hold Time Reg` | 16 |  60 |
+| `Bit Flip Hold Time Reg` | 16 |  61 |
+| `Fault Injection Enable Reg` | 1 |  62 |
+| `Application Run Time Reg` | 16 |  63 |
