@@ -35,7 +35,7 @@ It features:
 
 ## Demonstrator Dependencies 📝
 
-- Vivafo: **2023.1 was used to generate bitstream**
+- Vivado: **2023.1 was used to generate bitstream**
 - FPGA platform: **AMD VC709 (Virtex-7)**
 
 ⚠️ **Note:** This design is hardware-dependent and will only run on the AMD VC709 FPGA board.
@@ -58,15 +58,40 @@ Steps must be performed in order.
 
 `AMD-AOHW25_620/RISC-V_smart_watchdog_fast_SNN/riscv_watchdog_fast_design_2_compressed.bit`
 
-Vivado should also automatically select the debug probes file from the same directory
+Vivado should also automatically select the debug probes file from the same directory:
 
 `AMD-AOHW25_620/RISC-V_smart_watchdog_fast_SNN/debug_nets.ltx`
 
 **Step 6** - Click *Program*.
 
-✅ Once the FPGA is programmed, the ILA waveform window should open after a short delay, completing the demonstrator build.
+✅ Once the FPGA is programmed, the ILA waveform window should open after a short delay, completing the build.
 
 ---
 
+ ## Observe Smart Watchdog Operation 🕵🏻
 
+ **Step 1** - Under the trigger setup tab on the bottom right:
+
+     - Click `+` to add a trigger probe.
+     - Find and select 'start_pulse`.
+     - Set the value field to rising edge `R (0 to 1 transition)`.
+
+**Step 2** - Under the settings tab on the bottom left:
+
+     - Enter '0' for Trigger position in window.
+
+**Step 3** - Maximise the waveform tab to full screen size.
+
+**Step 4** - Add the following signals to the waveform window in order:
+
+     `neorv32_reset`
+     `watchdog_current_state`
+     `fifo_empty`
+     `fifo_rd_en`
+     `fifo_rd_valid`
+     `features` (select binary as radix)
+     `SNN_ready`
+     `SNN_trigger`
+     `SNN_done`
+     
 
