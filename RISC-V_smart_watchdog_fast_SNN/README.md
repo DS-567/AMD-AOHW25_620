@@ -56,11 +56,17 @@ Steps must be performed in order.
 
 **Step 5** - Click *Program Device*. Browse for a *bitstream file* and select the following file:
 
-`AMD-AOHW25_620/RISC-V_smart_watchdog_fast_SNN/wwww`
+`AMD-AOHW25_620/RISC-V_smart_watchdog_fast_SNN/riscv_watchdog_fast_design_2_compressed.bit`
 
+Vivado should also automatically select the debug probes file from the same directory
+
+`AMD-AOHW25_620/RISC-V_smart_watchdog_fast_SNN/debug_nets.ltx`
+
+**Step 6** - Click *Program*.
+
+✅ Once the FPGA is programmed, the ILA waveform window should open after a short delay, completing the demonstrator build.
 
 ---
 
-✅ Once the FPGA is programmed, the Python GUI will initialize, completing the demonstrator build.
 
 
