@@ -17,8 +17,9 @@ It features:
 ## Demonstrator Contents 📦
 
 - Vivado
-     - ***riscv_watchdog_fast_design_2.bit*** : Compressed bitstream generated from Vivado.
+     - ***riscv_watchdog_fast_design_2_compressed.bit*** : Compressed bitstream generated from Vivado.
      - ***debug_nets.ltx*** : Debug probe netlist generated from Vivado.
+     - ***constraints_file/*** : Board constraints file (not required for build).
      - ***HDL/*** : Contains all VHDL source code of the Vivado project (not required for build).
      - ***setup_text_files/*** : Text files of SNN parameters used during Vivado synthesis (not required for build).
 
