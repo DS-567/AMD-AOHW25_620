@@ -72,7 +72,7 @@ Vivado should also automatically select the debug probes file from the same dire
 
  **Step 1** - Enter the following commands into the TCL console:
  
-     `set_property TRIGGER_CONDITION rising_edge [get_hw_probes my_signal]`
+     `set_property TRIGGER_CONDITION rising_edge [get_hw_probes start_pulse]`
      `set_property C_TRIGGER_POSITION 0 [get_hw_ilas hw_ila_1]`
      `waveform zoomfull`
      `add_wave [get_hw_probes {neorv32_reset}]`
