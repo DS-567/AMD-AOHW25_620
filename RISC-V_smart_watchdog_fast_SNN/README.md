@@ -23,12 +23,12 @@ It features:
      - ***HDL/*** : Contains all VHDL source code of the Vivado project (not required for build).
      - ***setup_text_files/*** : Text files of SNN parameters used during Vivado synthesis (not required for build).
 
-- neorv32-main
+- neorv32-main (NEED TO ADD THIS!!!!)
      - ***rtl/*** : Contains all VHDL source code for the RISC-V CPU - Neorv32 (not required for build).
      - ***sim/*** : Contains all simulation resources for the RISC-V CPU - Neorv32 (not required for build).
      - ***sw/*** : Contains software framework for the RISC-V CPU - Neorv32 (not required for build).
 
-**Note:** The motor control C and disassembled source code can be found: `neorv32-main/sw/example/my_code_iscas_demo`
+**Note:** The Fibonacci Series C and disassembled source code can be found: `neorv32-main/sw/examples/my_code_fibonacci_series`
 
 ---
 
