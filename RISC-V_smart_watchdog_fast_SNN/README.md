@@ -16,41 +16,18 @@ It features:
 
 ## Demonstrator Contents 📦
 
-### /sw
-- Python GUI
-     - ***ISCAS_demo_gui.py*** : Main Python GUI script
-     - ***requirements.txt***  : Python dependencies
-     - ***uart_config.json***  : UART configuration
-     - ***images/*** : Images for GUI
-
-- MicroBlaze
-     - ***main.c*** : Main C code that runs on the MicroBlaze
-     - ***platform.c***  : Platform-specific functions
-     - ***platform.h***  : Platform-specific header file
-     - ***platform_config.h*** : Platform config header file
-
-### /hw
 - Vivado
-     - ***design_1_wrapper.xsa*** : Generated bitstream from Vivado for use in Vitis
-     - ***constraints_file.xdc*** : Nexys A7-100T board contraints (not required for build)
-     - ***HDL/*** : Contains all VHDL source code for the demonstrator FPGA design (not required for build)
-     - ***setup_text_files/*** : Text files of SNN parameters used during Vivado synthesis (not required for build)
+     - ***riscv_watchdog_fast_design_2.bit*** : Compressed bitstream generated from Vivado.
+     - ***debug_nets.ltx*** : Debug probe netlist generated from Vivado.
+     - ***HDL/*** : Contains all VHDL source code of the Vivado project (not required for build).
+     - ***setup_text_files/*** : Text files of SNN parameters used during Vivado synthesis (not required for build).
 
 - neorv32-main
-     - ***rtl/*** : Contains all VHDL source code for the RISC-V CPU - Neorv32 (not required for build)
-     - ***sim/*** : Contains all simulation resources for the RISC-V CPU - Neorv32 (not required for build)
-     - ***sw/*** : Contains software framework for the RISC-V CPU - Neorv32 (not required for build)
+     - ***rtl/*** : Contains all VHDL source code for the RISC-V CPU - Neorv32 (not required for build).
+     - ***sim/*** : Contains all simulation resources for the RISC-V CPU - Neorv32 (not required for build).
+     - ***sw/*** : Contains software framework for the RISC-V CPU - Neorv32 (not required for build).
 
 **Note:** The motor control C and disassembled source code can be found: `neorv32-main/sw/example/my_code_iscas_demo`
-
-- Custom PCBs
-     - ***Motor control PCB*** : Digital inputs to start, stop and change the direction and speed of the motor
-     - ***Motor encoder PCB*** : Encoder speed feedback pulses of the motor for Neorv32 (12v to 3.3V)
-     - ***Motor fault injection and smart watchdog monitoring PCB*** : Used to setup and inject faults into Neorv32 and observe the smart watchdog response
-
-**Note:** More information on the custom PCBs can be found: [`AMD-AOHW25_620/Demonstrator/hw/PCBs/`](/Demonstrator/hw/PCBs/).
-
-See the [report](../Report.pdf) for full details on the smart watchdog and Fast SNN implementation.
 
 ---
 
