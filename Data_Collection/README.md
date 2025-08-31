@@ -132,7 +132,7 @@ and **Click Finish**.
 
 ---
 
- ## 1. To Collect Data 🗂️
+ ## To Collect Data 🗂️
 
  There are two modes of operation: ***Manual*** and ***Auto***.
 
@@ -181,13 +181,82 @@ Also replacing the UART with a faster protocol such as ethernet would be benefic
 
 ---
 
- ## Fault Injection 🔧
+ ## Auto Fault Injection 🔧
 
 The table below shows the setup registers for setting up and injecting faults into Neorv32. The 64 registers are written to and read from by the MicroBlaze CPU at a higher abtraction using the register index and a constant array of register name strings (look-up table) in the MicroBlaze main.c [lines 16-27].
 
-To collect larger datasets automatically, there are variables MicroBlaze main.c [lines ?-?] that can be pre-configured before programming the FPGA, which are desribed below:
+To collect larger datasets automatically, there are variables MicroBlaze main.c [lines 114-178] that can be pre-configured before programming the FPGA, which are described below:
+ 
+**1** - `int application_run_num = 4;`
 
-****: 
+This must be set according to the appliation running on Neorv32, as it defines the size of result data memory to extract from Neorv32 data memory (DMEM) after the software application.
+
+**Note**, this parameter also needs to be set in the VHDL cource code and requires the bitstream to be re-generated after compiling new Neorv32 software (Vivado can be provided on request)!
+
+**2** - `int auto_application_run_time = 10000;`
+
+The number of clock cycles to run each Neorv32 application for - `10,000` clock cycles in this case.
+
+**3** - `int auto_faults_enabled = 0;`
+
+Intialising this to 0 prevents fault injection and setting to 1 allows the hardware to physically inject any configured faults.
+
+**4** - `int auto_stuck_at_hold_time = 10000;`
+
+If stuck at faults are injected, this variable defines how long each stuck at faults lasts - `10,000` clock cycles in this case, indicating a permanent fault.
+
+**5** - `int auto_bit_flip_hold_time = 0;`
+
+This is not used anymore- always leave as 0!
+
+**6** -
+
+`int auto_fault_type_1 = 0;`
+`int auto_fault_time_1 = 0;`
+
+`int auto_fault_type_2 = 0;`
+`int auto_fault_time_2 = 0;`
+
+`int auto_fault_type_3 = 0;`
+`int auto_fault_time_3 = 0;`
+
+`int auto_fault_type_4 = 0;`
+`int auto_fault_time_4 = 0;`
+
+`int auto_fault_type_5 = 0;`
+`int auto_fault_time_5 = 0;`
+
+`int auto_fault_type_6 = 0;`
+`int auto_fault_time_6 = 0;`
+
+`int auto_fault_type_7 = 0;`
+`int auto_fault_time_7 = 0;`
+
+`int auto_fault_type_8 = 0;`
+`int auto_fault_time_8 = 0;`
+
+`int auto_fault_type_9 = 0;`
+`int auto_fault_time_9 = 0;`
+
+`int auto_fault_type_10 = 0;`
+`int auto_fault_time_10 = 0;`
+
+The auto fault injection mode allows up to 10 fault (type and start time) to be entered for each bit of the PC.
+
+`Type: 0 = No Fault | 1 = Stuck at 0 | 2 = Stuck at 1 | 3 =  Bit Flip`
+
+**7** - `int auto_num_faults_per_bit = 10;`
+
+Select how many of the above 10 faults type to inject.
+
+**8** - 
+
+`int int auto_start_bit = 1;`
+`int auto_end_bit = 10; = 10;`
+
+Finally the order and targeted bits of the PC can be set.
+
+**Note**, Running all takes considerable time with the UART! But capturing multiple text files with assortments of faults can then be used to train the SNN!
 
 ### Setup registers table:
  
