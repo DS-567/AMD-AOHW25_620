@@ -17,17 +17,16 @@ It features:
 
 ## Demonstrator Contents 📦
 
-- Vivado
-     - ***riscv_watchdog_fast_design_2_compressed.bit*** : Compressed bitstream generated from Vivado.
-     - ***debug_nets.ltx*** : Debug probe netlist generated from Vivado.
-     - ***constraints_file.xdc*** : AMD VC709 (Virtex-7) board contraints (not required for build)
-     - ***HDL/*** : Contains all VHDL source code of the Vivado project (not required for build).
-     - ***setup_text_files/*** : Text files of SNN parameters used during Vivado synthesis (not required for build).
-
-- neorv32-main
+- ***HDL/*** : Contains all VHDL source code of the Vivado project (not required for build).
+- ***neorv32-main***
      - ***rtl/*** : Contains all VHDL source code for the RISC-V CPU - Neorv32 (not required for build).
      - ***sim/*** : Contains all simulation resources for the RISC-V CPU - Neorv32 (not required for build).
      - ***sw/*** : Contains software framework for the RISC-V CPU - Neorv32 (not required for build).
+- ***setup_text_files/*** : Text files of SNN parameters used during Vivado synthesis (not required for build).
+- ***constraints_file.xdc*** : AMD VC709 (Virtex-7) board contraints (not required for build)
+- ***debug_nets.ltx*** : Debug probe netlist generated from Vivado.
+- ***riscv_watchdog_fast_design_2_compressed.bit*** : Compressed bitstream generated from Vivado.
+- ***program_fpga.tcl*** : TCL script to program FPGA.
 
 **Note:** The Fibonacci Series C and disassembled source code can be found: `neorv32-main/sw/examples/my_code_fibonacci_series`
 
