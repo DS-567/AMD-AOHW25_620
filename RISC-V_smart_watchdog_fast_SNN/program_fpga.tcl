@@ -14,7 +14,7 @@ refresh_hw_device $my_device
 
 # verify it is the VC709 Virtex-7 connected
 set dev_name [get_property PART $my_device]
-set expected_part "xc7vx690tffg1761-2L"  ;# VC709 FPGA part
+set expected_part "xc7vx690tffg1761-2L"
 
 if {$dev_name != $expected_part} {
     puts "ERROR: This FPGA ($dev_name) is not the expected VC709 device ($expected_part)."
@@ -30,5 +30,6 @@ program_hw_devices $my_device
 refresh_hw_device $my_device
 
 puts "FPGA programmed :)"
+
 
 
