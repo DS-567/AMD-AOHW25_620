@@ -20,3 +20,4 @@ program_hw_devices $my_device
 refresh_hw_device $my_device
 
 puts "FPGA programmed :)"
+
