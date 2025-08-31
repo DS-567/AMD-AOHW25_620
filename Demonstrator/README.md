@@ -82,7 +82,7 @@ There are two stages for building the demonstrator, which must be performed in o
 
  ## 1. Python GUI Build 📺
 
-**Step 1** - Download the repo zip file (if not already done so).
+**Step 1** - Download the repo zip file (if not already done so) and unzip.
 
 **Step 2** - Open the Windows terminal:
 
