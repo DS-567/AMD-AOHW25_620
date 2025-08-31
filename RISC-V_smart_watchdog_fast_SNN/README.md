@@ -48,27 +48,21 @@ Steps must be performed in order.
 
 **Step 1** - Download the repo zip file (if not already done so) and unzip.
 
-**Step 2** - Open Vivado and then open the hardware manager.
+**Step 2** - Open Vivado and power up the AMD VC709 FPGA board and plug in the JTAG USB cable to board and PC.
 
-**Step 3** - Power up the AMD VC709 FPGA board and plug in the JTAG USB cable to board and PC.
+**Step 3** - In the TCL console, enter your file path of the `RISC-V_smart_watchdog_fast_SNN` directory. For example:
 
-**Step 4** - Click *Open target* and *auto-connect* to the FPGA.
+`cd "C:/YOUR_FILE_PATH/AMD-AOHW25_620/AMD-AOHW25_620/riscv_watchdog_fast_design_2"`
 
-**Step 5** - Click *Program Device*. Browse for a *bitstream file* and select the following file:
+**Step 4** - In the TCL console, enter thefollowing command:
 
-`AMD-AOHW25_620/RISC-V_smart_watchdog_fast_SNN/riscv_watchdog_fast_design_2_compressed.bit`
+`source program_fpga.tcl`
 
-Vivado should also automatically select the debug probes file from the same directory:
-
-`AMD-AOHW25_620/RISC-V_smart_watchdog_fast_SNN/debug_nets.ltx`
-
-**Step 6** - Click *Program*.
-
-✅ Once the FPGA is programmed, the ILA waveform window should open after a short delay, completing the build.
+✅ If successful, the ILA waveform window should open after a short delay, completing the build.
 
 ---
 
- ## Observe Smart Watchdog Operation 🕵🏻
+ ### Observe Smart Watchdog Operation 🕵🏻
 
  **Step 1** - Enter the following commands into the TCL console:
  
