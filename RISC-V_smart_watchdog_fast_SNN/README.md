@@ -67,15 +67,15 @@ Steps must be performed in order.
  **Step 1** - Manually setup the trigger probe:
 
       - `+` and select `start_pulse`.
-      - Then select the trigger type as rising edge `R (0 to 1 transition)`.
+      - Then select the trigger type as `R` for rising edge `R (0 to 1 transition)`.
 
  **Step 2** - Set the trigger position in waveform to `0`.
 
- **Step 3** - In the TCL console, enter thefollowing command:
+ **Step 3** - In the TCL console, enter the following command:
 
 `source wave_setup.tcl`
 
-
+Manually change the features radix to `binary`.
 
  **Step 4** - Press the bottom button on the FPGA board to initiate the hardware:
 
