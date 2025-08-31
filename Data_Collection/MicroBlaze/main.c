@@ -123,13 +123,13 @@ int *AXI_REG_15_MTVEC_DATA;					// pointer to AXI slave reg 15, used to read MTV
 int application_run_num = 4;
 
 // length of time to run each application for
-int auto_application_run_time = 17000;
+int auto_application_run_time = 0;
 
 // enable fault injection
-int auto_faults_enabled = 1;
+int auto_faults_enabled = 0;
 
 // length of time to hold a stuck at fault (permanent)
-int auto_stuck_at_hold_time = 17000;
+int auto_stuck_at_hold_time = 0;
 
 // not used anymore!
 int auto_bit_flip_hold_time = 0;	// not used anymore!
@@ -178,7 +178,6 @@ int auto_end_bit = 10;
 // End of auto fault parameters setup area
 
 
-// declare ???
 bool auto_mode_selected = 0;
 bool flush_bits_regs_flag = false;
 bool check_type_parameters = 0;
@@ -2317,5 +2316,6 @@ const char* DecodeExecuteStatestoString(int array_index)
 {
 	return Execute_States_Decode_Strings[array_index];
 }
+
 
 
