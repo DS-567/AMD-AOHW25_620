@@ -66,14 +66,15 @@ Steps must be performed in order.
 
 **Step 1** - Manually setup the trigger probe:
 
-      - `+` and select `start_pulse`.
-      - Then select the trigger type as `R` for rising edge `R (0 to 1 transition)`.
+- `+` and select `start_pulse`.
+      
+- Then select the trigger type as `R` for rising edge `R (0 to 1 transition)`.
 
 **Step 2** - Set the trigger position in waveform to `0`.
 
 **Step 3** - Manually make the waveform the full size of the screen,
 
-and remove all the current waveform signals by highlightig them and pressing `-`.
+and remove all the current waveform signals by highlighting them all and pressing `-`.
 
 **Step 4** - In the TCL console, enter the following command:
 
