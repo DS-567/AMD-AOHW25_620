@@ -24,7 +24,7 @@ It features:
      - ***HDL/*** : Contains all VHDL source code of the Vivado project (not required for build).
      - ***setup_text_files/*** : Text files of SNN parameters used during Vivado synthesis (not required for build).
 
-- neorv32-main (NEED TO ADD THIS!!!!)
+- neorv32-main
      - ***rtl/*** : Contains all VHDL source code for the RISC-V CPU - Neorv32 (not required for build).
      - ***sim/*** : Contains all simulation resources for the RISC-V CPU - Neorv32 (not required for build).
      - ***sw/*** : Contains software framework for the RISC-V CPU - Neorv32 (not required for build).
@@ -35,51 +35,30 @@ It features:
 
 ## Demonstrator Dependencies 📝
 
-- Python: **3.9.10**
-- Vitis: **2023.1**
-- FPGA platform: **Nexys A7-100T**
+- Vivafo: **2023.1 was used to generate bitstream**
+- FPGA platform: **AMD VC709 (Virtex-7)**
 
-⚠️ **Note:** This design is hardware-dependent and requires the custom PCBs.  
-The build instructions can still be followed, but the system will not function without them!
+⚠️ **Note:** This design is hardware-dependent and will only run on the AMD VC709 FPGA board.
 
 ---
 
- ## Build Steps to Run the Demonstrator 🔨
+ ## Build Steps to Run the Vivado bitstream 🔨
 
-There are two stages for building the demonstrator, which must be performed in order.
+Steps must be performed in order.
 
- ## 1. Python GUI Build 📺
+**Step 1** - Download the repo zip file (if not already done so) and unzip.
 
-**Step 1** - Download the repo zip file (if not already done so).
+**Step 2** - Open Vivado and then open the hardware manager.
 
-**Step 2** - Open the Windows terminal:
+**Step 3** - Power up the AMD VC709 FPGA board and plug in the JTAG USB cable to board and PC.
 
-`cmd`
+**Step 4** - Click *Open target* and *auto-connect* to the FPGA.
 
-and navigate to folder:
-
-`/AMD-AOHW25_620/Demonstrator/sw/Python_GUI`
-
-**Step 3** - Create and activate a virtual environment (windows):
-         
-`[PATH_TO_PYTHON39] -m venv venv`
-
-`venv\Scripts\activate`
+**Step 5** - Click *Program Device*:
 
 
-**Step 4** - Install dependencies:
 
-`pip install -r requirements.txt`
 
-**Step 5** - Plug in the Nexys A7-100T FPGA board. Find the COM port in Device Manager and update `uart_config.json,` e.g.
-
-`"COM1"`
-
-**Step 6** - Run the script:
-
-`python ISCAS_demo_gui.py`
-
-A blank GUI should pop-up.
 
 ---
 
