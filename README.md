@@ -98,6 +98,8 @@ The smart watchdog has three main components: ***Control FSM***, ***feature extr
 
 Full details of the smart watchdog implementation can be seen in the [report](/Report.pdf). 
 
+Verification spike plots of the SNN model from SNNTorch (software) and FPGA (hardware) can be seen here: [Verification_Spike_Plots](/fix_link). 
+
 <p align="center">
   <img src="assets/smart_watchdog_implementation.PNG" alt="Smart Watchdog Implementation" width="450"/>
 </p>
