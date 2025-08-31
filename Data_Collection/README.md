@@ -63,7 +63,7 @@ Constraints file is provided to port to other AMD FPGAs.
 
 These stages for building the data collection design must be performed in the following order:
 
-Firstly download the repo ZIP file (if not already done so).
+Firstly download the repo ZIP file (if not already done so) and unzip.
 
  ## 1. Serial Terminal Setup 📺
 
