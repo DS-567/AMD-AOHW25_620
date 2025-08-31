@@ -91,7 +91,9 @@ Vivado should also automatically select the debug probes file from the same dire
  
  **Step 2** - Press the bottom button on the FPGA board to initiate the hardware:
 
- 
+ <p align="center">
+  <img src="../assets/VC709_trigger_button.png" alt="VC709 Trigger Button" width="380"/>
+</p>
 
      
 
