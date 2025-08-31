@@ -27,6 +27,7 @@ It features:
 - ***debug_nets.ltx*** : Debug probe netlist generated from Vivado.
 - ***riscv_watchdog_fast_design_2_compressed.bit*** : Compressed bitstream generated from Vivado.
 - ***program_fpga.tcl*** : TCL script to program FPGA.
+- ***wave_setup.tcl*** : TCL script to setup the ILA waveform.
 
 **Note:** The Fibonacci Series C and disassembled source code can be found: `neorv32-main/sw/examples/my_code_fibonacci_series`
 
@@ -35,7 +36,7 @@ It features:
 ## Demonstrator Dependencies 📝
 
 - Vivado: **2023.1 was used to generate bitstream**
-- FPGA platform: **AMD VC709 (Virtex-7)**
+- FPGA platform: **AMD VC709 (Virtex-7) FPGA board**
 
 ⚠️ **Note:** This design is hardware-dependent and will only run on the AMD VC709 FPGA board.
 
@@ -61,32 +62,33 @@ Steps must be performed in order.
 
 ---
 
- ### Observe Smart Watchdog Operation 🕵🏻
+ ### Smart Watchdog Operation 🕵🏻
 
- **Step 1** - Enter the following commands into the TCL console:
- 
-     `set_property TRIGGER_CONDITION rising_edge [get_hw_probes start_pulse]`
-     `set_property C_TRIGGER_POSITION 0 [get_hw_ilas hw_ila_1]`
-     `waveform zoomfull`
-     `add_wave [get_hw_probes {neorv32_reset}]`
-     `add_wave [get_hw_probes {watchdog_2_inst/S_Current_State}]`     
-     `add_wave [get_hw_probes {fifo_empty}]`     
-     `add_wave [get_hw_probes {fifo_rd_en}]`     
-     `add_wave [get_hw_probes {fifo_rd_valid}]`  
-     `add_wave -radix binary [get_hw_probes {watchdog_2_inst/features}]`  
-     `add_wave [get_hw_probes {watchdog_2_inst/SNN_ready}]`  
-     `add_wave [get_hw_probes {watchdog_2_inst/SNN_trigger}]` 
-     `add_wave -radix unsigned [get_hw_probes {watchdog_2_inst/fast_SNN_inst/timestep_counter_reg}]` 
-     `add_wave [get_hw_probes {watchdog_2_inst/SNN_done}]`  
-     `add_wave [get_hw_probes {SNN_class_zero}]` 
-     `add_wave [get_hw_probes {SNN_class_one}]` 
-     `run_hw_ila [get_hw_ilas hw_ila_1]`
- 
- **Step 2** - Press the bottom button on the FPGA board to initiate the hardware:
+ **Step 1** - Manually setup the trigger probe:
+
+      - `+` and select `start_pulse`.
+      - Then select the trigger type as rising edge `R (0 to 1 transition)`.
+
+ **Step 2** - Set the trigger position in waveform to `0`.
+
+ **Step 3** - In the TCL console, enter thefollowing command:
+
+`source wave_setup.tcl`
+
+
+
+ **Step 4** - Press the bottom button on the FPGA board to initiate the hardware:
 
  <p align="center">
   <img src="../assets/VC709_trigger_button.png" alt="VC709 Trigger Button" width="380"/>
 </p>
 
-     
+✅ The ILA waveform should now be populated with data.
 
+---  
+
+ ### Observing the ILA Waveform 🔬
+
+
+
+ 
