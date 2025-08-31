@@ -98,8 +98,6 @@ The smart watchdog has three main components: ***Control FSM***, ***feature extr
 
 Full details of the smart watchdog implementation can be seen in the [report](/Report.pdf). 
 
-A Vivado bitstream and ILA debug files are provided to observe the smart watchdog running in hardware alongisde the RISC-V CPU and verify spike patterns with a spike plot from the SNNTorch software model: [](/fix_link). 
-
 <p align="center">
   <img src="assets/smart_watchdog_implementation.PNG" alt="Smart Watchdog Implementation" width="450"/>
 </p>
@@ -114,7 +112,7 @@ A Vivado bitstream and ILA debug files are provided to observe the smart watchdo
 
 ## 4. Builds 🚀
 
-There are 3 source codes provided in this repository for building:
+There are 4 source codes provided in this repository for building:
 
 ### 1. Smart Watchdog Demonstrator
 
@@ -143,6 +141,12 @@ Implementing a trained model on FPGA can require some consideration. The simple 
 </p>
 
 [Click here for build instructions](/Model_sw_to_hw)
+
+### 4. Smart Watchdog Vivado ILA Core 
+
+A Vivado bitstream and ILA debug files are provided to observe the smart watchdog running in hardware alongisde the RISC-V CPU and verify spike patterns with a spike plot from the SNNTorch software model.
+
+[Click here for build instructions](/RISC-V_smart_watchdog_fast_SNN)
 
 ---
 
