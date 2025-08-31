@@ -1,4 +1,4 @@
-# Demonstrator Overview 🔍 
+# Smart Watchdog Vivado ILA Overview 🔍 
 
 This repository contains the source code and implemtation files for a Vivado project with a ILA debug core synthesized, also submitted to the AMD Open Hardware Design Competition 2025. The smart watchdog operation when monitoring the RISC-V processor can be observed in detail by looking at the waveforms.
 
