@@ -54,38 +54,10 @@ Steps must be performed in order.
 
 **Step 4** - Click *Open target* and *auto-connect* to the FPGA.
 
-**Step 5** - Click *Program Device*:
+**Step 5** - Click *Program Device*. Browse for a *bitstream file* and select the following file:
 
+`AMD-AOHW25_620/RISC-V_smart_watchdog_fast_SNN/wwww`
 
-
-
-
----
-
- ## 2. FPGA Build (Vitis IDE) 🖥️
-
-**Step 1** - Open Vitis IDE, create a clean workpace and start a new application project.
-
-**Step 2** - Select the tab **"create a new platform from hardware (XSA)"**. Browse for the **"design_1_wrapper.xsa"**, found in:
-
-`/AMD-AOHW25_620/Demonstrator/hw/vivado/design_1_wrapper.xsa`.
-
-**Step 3** - **Name the application project** demo (or anything), **click Next>** and **click Next>** again to skip domain.
-
-**Step 4** - In template, select **Empty C Application (C)** and **Click Finish>**.
-
-**Step 5** - **Right-click the `/src` folder** → **Import Sources**. Browse and select the `MicroBlaze` folder found in: 
-
-`/AMD-AOHW25_620/Demonstrator/sw/MicroBlaze`, and check the boxes to include the 4 source files:
-
-`main.c`
-`platform.c`
-`platform.h`
-`platform_config.h`
-
-**Step 6** - Build the project.
-
-**Step 7** - Set up a **single debug application** as the run configuration, and **Click Run>**.
 
 ---
 
