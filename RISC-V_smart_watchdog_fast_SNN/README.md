@@ -148,3 +148,7 @@ The neuron spikes can be inspected in more detail by expanding out the vectors o
 </p>
 
 ---
+
+### Final Note
+
+Bit 7 of the DIP switch on the AMD VC709 FPGA board is used to enable fault injection. The setup register for bit 4 fault one is hard-coded as a bit flip during the first instruction. Activating the switch should show the smart watchdog detecting the transient fault.
