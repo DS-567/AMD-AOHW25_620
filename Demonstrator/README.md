@@ -140,7 +140,7 @@ A blank GUI should pop-up.
 
 **Step 7** - Set up a **single debug application** as the run configuration, and **Click Run>**.
 
-*These steps could be automated by a script*.
+*(These steps could be automated by a script)*.
 
 ---
 
