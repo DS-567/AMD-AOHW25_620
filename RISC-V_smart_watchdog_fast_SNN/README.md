@@ -31,7 +31,7 @@ It features:
 
 **Note:** The Fibonacci Series C and disassembled source code can be found: `neorv32-main/sw/examples/my_code_fibonacci_series`
 
-[neorv32-main/sw/examples/my_code_fibonacci_series](/neorv32-main/sw/examples/my_code_fibonacci_series)
+[neorv32-main/sw/examples/my_code_fibonacci_series](#neorv32-main/sw/examples/my_code_fibonacci_series)
 
 ---
 
