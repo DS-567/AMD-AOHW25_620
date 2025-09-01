@@ -54,7 +54,7 @@ Steps must be performed in order.
 
 `cd "C:/YOUR_FILE_PATH/AMD-AOHW25_620/AMD-AOHW25_620/riscv_watchdog_fast_design_2"`
 
-**Step 4** - In the TCL console, enter thefollowing command:
+**Step 4** - In the TCL console, enter the following command:
 
 `source program_fpga.tcl`
 
