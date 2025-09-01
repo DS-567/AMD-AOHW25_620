@@ -96,7 +96,7 @@ Manually change the features radix to `binary`.
 
 Zoom into the waveform similair to as shown below. The operation of the smart watchdog can be observed classifying a LUI (load upper immediate) instruction. 
 
-This can be verified by looking at the Fibonacci Series disassembled assembly file: [main.asm](/neorv32-main/sw/example/my_code_fibonacci_series/main.asm)
+This can be verified by looking at the Fibonacci Series disassembled assembly file: [main.asm](neorv32-main/sw/example/my_code_fibonacci_series/main.asm)
 
  <p align="center">
   <img src="../assets/waveform_observe_monitoring.PNG" alt="Waveform Observe Monitoring.PNG" width="1000"/>
