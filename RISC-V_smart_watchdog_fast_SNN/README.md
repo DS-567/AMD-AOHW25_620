@@ -94,6 +94,7 @@ Manually change the features radix to `binary`.
 
  ### Observing the ILA Waveform 🔬
 
+Zoom into the waveform similair to as shown below. The operation of the smart watchdog can be observed classifying a 
  <p align="center">
   <img src="../assets/waveform_observe_monitoring.PNG" alt="Waveform Observe Monitoring.PNG" width="1000"/>
 </p>
