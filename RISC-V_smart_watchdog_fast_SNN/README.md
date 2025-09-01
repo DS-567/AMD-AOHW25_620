@@ -98,8 +98,14 @@ Zoom into the waveform similair to as shown below. The operation of the smart wa
 
 This can be verified by looking at the Fibonacci Series disassembled assembly file: [main.asm](neorv32-main/sw/example/my_code_fibonacci_series/main.asm)
 
+The waveform shows the smart watchdog control FSM reading the FIFO data, the features extracted and the SNN triggered and the inference result (class zero - normal execution). There are many other signals available to observe in more detail.
+
  <p align="center">
   <img src="../assets/waveform_observe_monitoring.PNG" alt="Waveform Observe Monitoring.PNG" width="1000"/>
 </p>
 
- 
+The neuron spikes can be inspected in more detail by expanding out the vectors on the waveforms.  
+
+ <p align="center">
+  <img src="../assets/waveform_observe_monitoring.PNG" alt="Waveform Observe Monitoring.PNG" width="1000"/>
+</p>
