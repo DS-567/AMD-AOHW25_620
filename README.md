@@ -112,7 +112,7 @@ Full details of the smart watchdog implementation can be seen in the [report](/R
 
 ## 4. Builds 🚀
 
-There are 4 source codes provided in this repository for building:
+There are 4 separate source codes provided in this repository for optional building:
 
 ### 1. Smart Watchdog Demonstrator
 
