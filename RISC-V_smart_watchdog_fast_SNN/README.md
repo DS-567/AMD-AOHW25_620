@@ -104,8 +104,10 @@ The waveform shows the smart watchdog control FSM reading the FIFO data, the fea
   <img src="../assets/waveform_observe_monitoring.PNG" alt="Waveform Observe Monitoring.PNG" width="1000"/>
 </p>
 
-The neuron spikes can be inspected in more detail by expanding out the vectors on the waveforms.  
+---
+
+The neuron spikes can be inspected in more detail by expanding out the vectors on the waveforms. A spike plot (below) from the SNN software model plotted on SNNTorch from the same instruction that is zoomed on in the image above.
 
  <p align="center">
-  <img src="../assets/waveform_observe_monitoring.PNG" alt="Waveform Observe Monitoring.PNG" width="1000"/>
+  <img src="../assets/LUI_SNNTorch_spike_plot.PNG" alt="LUI SNNTorch Spike Plot.PNG" width="650"/>
 </p>
