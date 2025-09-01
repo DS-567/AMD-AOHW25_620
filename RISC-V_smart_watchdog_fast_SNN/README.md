@@ -106,12 +106,45 @@ The waveform shows the smart watchdog control FSM reading the FIFO data, the fea
 
 ---
 
-The neuron spikes can be inspected in more detail by expanding out the vectors on the waveforms. A spike plot (below) from the SNN software model plotted on SNNTorch from the same instruction that is zoomed on in the image above.
+The neuron spikes can be inspected in more detail by expanding out the vectors on the waveforms. A spike plot (below) from the SNN software model plotted on SNNTorch from the same instruction zoomed in on the image above can be compared with, for each layer in the network.
 
- <p align="center">
+<p align="center">
   <img src="../assets/LUI_SNNTorch_spike_plot.PNG" alt="LUI SNNTorch Spike Plot.PNG" width="650"/>
 </p>
 
 ---
 
 ### Input Layer
+
+<p align="center">
+  <img src="../assets/LUI_SNNTorch_spike_plot.PNG" alt="LUI SNNTorch Spike Plot.PNG" width="650"/>
+</p>
+
+<p align="center">
+  <img src="../assets/LUI_SNNTorch_spike_plot.PNG" alt="LUI SNNTorch Spike Plot.PNG" width="650"/>
+</p>
+
+---
+
+### Hidden Layer
+
+<p align="center">
+  <img src="../assets/LUI_SNNTorch_spike_plot.PNG" alt="LUI SNNTorch Spike Plot.PNG" width="650"/>
+</p>
+
+<p align="center">
+  <img src="../assets/LUI_SNNTorch_spike_plot.PNG" alt="LUI SNNTorch Spike Plot.PNG" width="650"/>
+</p>
+
+---
+### Output Layer
+
+<p align="center">
+  <img src="../assets/LUI_SNNTorch_spike_plot.PNG" alt="LUI SNNTorch Spike Plot.PNG" width="650"/>
+</p>
+
+<p align="center">
+  <img src="../assets/LUI_SNNTorch_spike_plot.PNG" alt="LUI SNNTorch Spike Plot.PNG" width="650"/>
+</p>
+
+---
