@@ -117,11 +117,11 @@ The neuron spikes can be inspected in more detail by expanding out the vectors o
 ### Input Layer
 
 <p align="center">
-  <img src="../assets/LUI_SNNTorch_spike_plot.PNG" alt="LUI SNNTorch Spike Plot.PNG" width="650"/>
+  <img src="../assets/IL_spikes_SNNTorch.PNG" alt="IL Spikes SNNTorch" width="650"/>
 </p>
 
 <p align="center">
-  <img src="../assets/LUI_SNNTorch_spike_plot.PNG" alt="LUI SNNTorch Spike Plot.PNG" width="650"/>
+  <img src="../assets/IL_spikes_fpga.PNG" alt="IL Spikes FPGA" width="650"/>
 </p>
 
 ---
@@ -129,22 +129,22 @@ The neuron spikes can be inspected in more detail by expanding out the vectors o
 ### Hidden Layer
 
 <p align="center">
-  <img src="../assets/LUI_SNNTorch_spike_plot.PNG" alt="LUI SNNTorch Spike Plot.PNG" width="650"/>
+  <img src="../assets/HL_spikes_SNNTorch.PNG" alt="HL Spikes SNNTorch" width="650"/>
 </p>
 
 <p align="center">
-  <img src="../assets/LUI_SNNTorch_spike_plot.PNG" alt="LUI SNNTorch Spike Plot.PNG" width="650"/>
+  <img src="../assets/HL_spikes_fpga.PNG" alt="HL Spikes FPGA" width="650"/>
 </p>
 
 ---
 ### Output Layer
 
 <p align="center">
-  <img src="../assets/LUI_SNNTorch_spike_plot.PNG" alt="LUI SNNTorch Spike Plot.PNG" width="650"/>
+  <img src="../assets/OL_spikes_SNNTorch.PNG" alt="OL Spikes SNNTorch" width="650"/>
 </p>
 
 <p align="center">
-  <img src="../assets/LUI_SNNTorch_spike_plot.PNG" alt="LUI SNNTorch Spike Plot.PNG" width="650"/>
+  <img src="../assets/OL_spikes_fpga.PNG" alt="OL Spikes FPGA" width="650"/>
 </p>
 
 ---
