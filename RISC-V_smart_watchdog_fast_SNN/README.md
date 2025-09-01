@@ -96,7 +96,7 @@ Manually change the features radix to `binary`.
 
 Zoom into the waveform similair to as shown below. The operation of the smart watchdog can be observed classifying a LUI (load upper immediate) instruction. 
 
-This can be verified by looking at the Fibonacci Series disassembled assembly file: [main.asm](neorv32-main/sw/example/my_code_fibonacci_series/main.asm)
+This can be verified by looking at the first instruction in the Fibonacci Series disassembled assembly file: [main.asm](neorv32-main/sw/example/my_code_fibonacci_series/main.asm)
 
 The waveform shows the smart watchdog control FSM reading the FIFO data, the features extracted and the SNN triggered and the inference result (class zero - normal execution). There are many other signals available to observe in more detail.
 
