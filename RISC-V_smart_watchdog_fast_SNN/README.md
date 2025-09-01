@@ -111,3 +111,7 @@ The neuron spikes can be inspected in more detail by expanding out the vectors o
  <p align="center">
   <img src="../assets/LUI_SNNTorch_spike_plot.PNG" alt="LUI SNNTorch Spike Plot.PNG" width="650"/>
 </p>
+
+---
+
+### Input Layer
