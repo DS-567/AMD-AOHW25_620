@@ -130,6 +130,8 @@ and **Click Finish**.
   <img src="../assets/data_collection_startup_print.PNG" alt="Data Collection Startup Print" width="300"/>
 </p>
 
+*(These steps could be automated by a script)*.
+
 ---
 
  ## To Collect Data 🗂️
