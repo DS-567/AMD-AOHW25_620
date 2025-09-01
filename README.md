@@ -106,7 +106,7 @@ Full details of the smart watchdog implementation can be seen in the [report](/R
 
 ✔️ The smart watchdog can detect faults that the RISC-V architecture fails to (no exception / trap).
 
-❕ Note, as described in the report there are 2 different hardware implementations of the SNN. The Fast SNN source code can be found in the [Demonstrator](/Demonstrator/hw/Vivado) and the SNN (time-mux) can be found in the [Reference_SNN_HDL folder](/Reference_SNN_HDL).
+❕ Note, as described in the report there are 2 different hardware implementations of the SNN. The Fast SNN source code can be found in the [Demonstrator/hw/Vivado](/Demonstrator/hw/Vivado) and the SNN (time-mux) can be found in the [Reference_SNN_HDL folder](/Reference_SNN_HDL).
 
 ---
 
