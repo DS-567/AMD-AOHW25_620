@@ -82,7 +82,7 @@ and remove all the current waveform signals by highlighting them all and pressin
 
 Manually change the features radix to `binary`.
 
-**Step 5** - Arm the ILA core by pressing `>` Press the bottom button on the FPGA board to initiate the hardware:
+**Step 5** - Arm the ILA core by pressing `>`. Press the bottom button on the FPGA board to initiate the hardware:
 
 <p align="center">
   <img src="../assets/VC709_trigger_button.png" alt="VC709 Trigger Button" width="380"/>
