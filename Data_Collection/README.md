@@ -69,7 +69,6 @@ Firstly download the repo ZIP file (if not already done so) and unzip.
 
 **Step 1** - Power up the VC709 FOGA board and plug both Micro-USB port (JTAG) and Mini USB (UART) into the board and two USB ports on a PC.
 
-com port driver check?
 **Step 2** - Open the Windows device manager and check if drivers for the virtual COM port need to be installed.
 
 ⚠️ **Note:** If the drivers are out of date, the drivers can be found here https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads. Simply download the drivers and search manually for the drivers in your downloads folder.
