@@ -20,7 +20,7 @@ See the [report](/Report.pdf) or [publications](#6-publications-) for more detai
 
 ---
 
-## UPDATE: This project was selected as a winner in the AMD Open Hardware Design Competition 2025! 🏆
+## UPDATE: This project was selected as a winner in the AMD Open Hardware Design Competition 2025 (Adaptive Computing - PhD Category)! 🏆
 
 ---
 
