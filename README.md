@@ -18,6 +18,12 @@ See the [report](/Report.pdf) or [publications](#6-publications-) for more detai
 
 **Additional demonstrator YouTube video:** https://www.youtube.com/watch?v=D4o1u4qUvNw&t=3s
 
+---
+
+## UPDATE: This project was selected as a winner in the AMD Open Hardware Design Competition 2025! 🏆
+
+---
+
 ## Project Overview
 
 With the complexity and miniscule feature sizes of modern processor architectures, temporary faults as a result of manufacturing defects and radiation-induced soft errors pose serious reliability concerns for CPUs deployed in safety-critical embedded applications. Fault detection mechanisms are required to monitor and detect faults to ensure hardware integrity. 
