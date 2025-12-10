@@ -246,7 +246,7 @@ This is not used anymore- always leave as 0!
 
 The auto fault injection mode allows up to 10 fault (type and start time) to be entered for each bit of the PC.
 
-`Type: 0 = No Fault | 1 = Stuck at 0 | 2 = Stuck at 1 | 3 =  Bit Flip`
+`Type: 0 = No Fault | 1 = Stuck at 0 | 2 = Stuck at 1 | 3 = Bit Flip`
 
 **7** - `int auto_num_faults_per_bit = 10;`
 
