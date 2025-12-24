@@ -94,7 +94,7 @@ Manually change the features radix to `binary`.
 
  ### Observing the ILA Waveform 🔬
 
-Zoom into the waveform similair to as shown below. The operation of the smart watchdog can be observed classifying a LUI (load upper immediate) instruction. 
+Zoom into the waveform similiar to as shown below. The operation of the smart watchdog can be observed classifying a LUI (load upper immediate) instruction. 
 
 This can be verified by looking at the first instruction in the Fibonacci Series disassembled assembly file: [main.asm](neorv32-main/sw/example/my_code_fibonacci_series/main.asm)
 
