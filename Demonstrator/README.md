@@ -14,7 +14,7 @@ It features:
 
 ### Short Decription
 
-- PI-speed control C algorithmn is compiled and executed on Neorv32, resembling a safety-critical motor control task.
+- PI-speed control C algorithm is compiled and executed on Neorv32, resembling a safety-critical motor control task.
 - Motor speed and direction is controlled while faults are injected into the program counter of Neorv32 where control flow errors might manifest.
 - The smart watchdog monitors each instruction executed by Neorv32 and classifies accordingly, i.e. normal execution or control flow error detected.
 - Smart watchdog class decisions and other information is extracted off FPGA over UART to a Python GUI for displaying to the user.
