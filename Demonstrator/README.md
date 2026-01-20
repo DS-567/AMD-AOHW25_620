@@ -3,7 +3,7 @@
 This repository contains the source code for the Smart Watchdog demonstrator presented at ISCAS 2025 and submitted to the AMD Open Hardware Design Competition 2025.
 
 It features:
-- A physical hardare setup (left) i.e motor, encoder, custom PCBs.
+- A physical hardare setup (left) i.e motor, encoder, custom PCBs, FPGA.
 - Python GUI frontend for user interaction (right).
 - Design bitstream generated from Vivado.
 - FPGA backend built using Vitis, running on the Nexys A7-100T board.
