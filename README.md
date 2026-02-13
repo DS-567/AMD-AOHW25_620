@@ -1,5 +1,9 @@
 # *From Brain-Inspiration to Silicon-Realisation:* SNN-based Smart Watchdogs for RISC-V Fault Detection
 
+---
+
+## UPDATE: This project was selected as a winner in the AMD Open Hardware Design Competition 2025 (Adaptive Computing - PhD Category)! 🏆
+
 Team number: **AOHW25_620**
 
 *Submission to the AMD Open Hardware Design Competition 2025*: **Spiking Neural Network (SNN)-based Smart Watchdogs for RISC-V Fault Detection**.
@@ -17,10 +21,6 @@ See the [report](/Report.pdf) or [publications](#6-publications-) for more detai
 **2-minute YouTube video:** https://www.youtube.com/watch?v=dE9iSWt-EiE 
 
 **Additional demonstrator YouTube video:** https://www.youtube.com/watch?v=D4o1u4qUvNw&t=3s
-
----
-
-## UPDATE: This project was selected as a winner in the AMD Open Hardware Design Competition 2025 (Adaptive Computing - PhD Category)! 🏆
 
 ---
 
