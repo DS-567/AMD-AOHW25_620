@@ -2,7 +2,7 @@
 
 ---
 
-## UPDATE: This project was selected as a winner in the AMD Open Hardware Design Competition 2025 (Adaptive Computing - PhD Category)! 🏆
+## UPDATE: This project was selected as a winner in the AMD Open Hardware Design Competition 2025 (Adaptive Computing - PhD Category) 🏆
 
 Team number: **AOHW25_620**
 
