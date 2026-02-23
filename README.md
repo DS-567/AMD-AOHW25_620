@@ -82,7 +82,7 @@ A full ML workflow was developed from scratch in the PhD:
 - Custom data collection hardware architecture created to gather training data.
 - Custom feature extraction algorithm.
 - SNN model trained using SNNTorch (~98% accuracy).
-- Implemented the SNN model in VHDL and instantiated inside the smart watchdog.
+- Implemented the SNN model in VHDL and instantiated the smart watchdog.
 - Validated the smart watchdog concept on FPGA (retained ~98% accuracy).
 - Created a final demonstrator of the smart watchdog on FPGA.
 
