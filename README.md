@@ -22,6 +22,8 @@ See the [report](/Report.pdf) or [publications](#6-publications-) for more detai
 
 **Additional demonstrator YouTube video:** https://www.youtube.com/watch?v=D4o1u4qUvNw&t=3s
 
+**Award Ceremony Presentation Slides:** [Presentation Slides](/Presentation_David_SImpson.pdf)
+
 ---
 
 ## Project Overview
